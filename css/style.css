@@ -1,6 +1,22 @@
-body {
-    margin: 60px auto;
-    width: 70%;
+html { 
+	font-size: 75%; // 12px 
 }
 
+@media only screen and (max-device-width: 480px) {
+	html {
+	 font-size: 100%; // 16px 
+	}
+}
+
+.jumbotron {
+	height: 100vh;
+	background-color: lightblue;
+}
+
+#intro {
+	margin-top: 10%;
+}
+
+#intro h1 {
+	font-size: 5em;
 }
