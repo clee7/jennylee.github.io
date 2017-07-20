@@ -7,6 +7,18 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Nunito:400,700,800" rel="stylesheet">
 
+  <script type="text/javascript">
+    var jumboHeight = $('.jumbotron').outerHeight();
+    function parallax(){
+      var scrolled = $(window).scrollTop();
+      $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+    }
+
+    $(window).scroll(function(e){
+      parallax();
+    });
+  </script>
+
 </head>
 <body>
 <!-- Navbar -->
