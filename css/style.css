@@ -3,14 +3,22 @@ font-family: 'Nunito', sans-serif;*/
 
 html { 
 	font-size: 75%; // 12px 
-	font-family: 'Nunito', sans-serif;
-	background: white;
+}
+
+body {
+  padding-top: 40px;
 }
 
 @media only screen and (max-device-width: 480px) {
 	html {
 	 font-size: 100%; // 16px 
 	}
+}
+
+.container {
+	width: 100%;
+	left: 0;
+	top: 0;
 }
 
 .bg {
@@ -35,9 +43,25 @@ html {
 }
 
 #intro {
-	margin-top: 22%;
+	margin-top: 25%;
 }
 
 #intro h1 {
 	font-size: 5em;
+}
+
+#about {
+	background: rgb(250, 181, 181);
+}
+
+#education {
+	background: rgb(193, 193, 198);
+}
+
+#work {
+	background: rgb(250, 181, 181);
+}
+
+#fun {
+	background: rgb(193, 193, 198);
 }
