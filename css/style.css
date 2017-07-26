@@ -153,6 +153,20 @@ html,body {
     letter-spacing:2px;
 }
 
+@media (max-width: 700px) {
+  #intro_text h1 {
+    font-size: 2.5em;
+    line-height:1em;
+    letter-spacing: 5px;
+  }
+
+  #intro_text h2 {
+    font-size: 1em;
+    font-weight:400;
+    letter-spacing:1px;
+}
+}
+
 
 .nav-btn{
   border: 1px solid #fff;
