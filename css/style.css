@@ -1,6 +1,12 @@
 /*font-family: 'Architects Daughter', cursive;
 font-family: 'Nunito', sans-serif;*/
 
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Nunito', sans-serif;
+}
+
 html { 
 	font-size: 75%;
 	font-family: 'Nunito', sans-serif;
