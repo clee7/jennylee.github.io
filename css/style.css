@@ -173,6 +173,9 @@ html,body {
   border-radius: 8px;
 }
 
+.nav-btn .link {
+  color: #fff; 
+}
 
 /* 2. About Me */
 #about {
