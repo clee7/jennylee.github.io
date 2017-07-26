@@ -10,7 +10,6 @@ font-family: 'Nunito', sans-serif;*/
 html,body { 
   font-size: 100%;
   height: 100%;
-  background-color: #ffdddd;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -122,15 +121,8 @@ html,body {
 
 .jumbotron {
   background: transparent;
-  width: 100%;
-  height:100vh;
-  margin: 0px;
-  padding: 0px;
-}
-
-.section {
-  width: 100%;
-  height: 100vh;
+    width: 100%;
+    height:100vh;
 }
 
 .content {
@@ -162,18 +154,42 @@ html,body {
 }
 
 
+.nav-btn{
+  border: 1px solid #fff;
+  color: #fff;
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+  width: auto;
+  display: inline-block;
+  font-size: 0.8em;
+  line-height: 1em;
+  padding: 7px 18px;
+  margin-top: 0.8em;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+
+
+/* 2. About Me */
 #about {
   background: rgb(250, 181, 181);
 }
 
+/* 3. Education */
 #education {
   background: rgb(193, 193, 198);
 }
 
+/* 4. Work Experiences*/
 #work {
   background: rgb(250, 181, 181);
 }
 
+/* 5. Fun Projects */
 #fun {
   background: rgb(193, 193, 198);
 }
