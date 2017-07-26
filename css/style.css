@@ -127,6 +127,8 @@ html {
 	color: white;
 	background: transparent;
 	text-align: center;
+	margin: 0px;
+ 	padding: 0px;
 }
 
 .content {
