@@ -8,8 +8,7 @@ font-family: 'Nunito', sans-serif;*/
 }
 
 html { 
-	font-size: 75%;
-	font-family: 'Nunito', sans-serif;
+	font-size: 100%;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -109,44 +108,49 @@ html {
   }
 }
 
-.bg {
+.background {
 	background: url('/assets/intro_background.jpg');
 	background-size: cover;
 	background-position: center center;
 	position: fixed;
-	width: 100%;
-	height: 100vh; /*same height as jumbotron */
+  width:100%;
+  height:100vh;
 	top:0;
 	left:0;
 	z-index: -1;
+  margin: -10px !important;
 }
 
 .jumbotron {
-	width: 100%;
-	height: 100vh;
 	color: white;
 	background: transparent;
 	text-align: center;
-	margin: 0px;
- 	padding: 0px;
+  width: 100%;
+  height:100vh;
 }
 
 .content {
 	padding: 20px 20px;
 }
 
-#intro {
+#intro_text {
 	position: relative;
 	float: left;
-	top: 50%;
+	top: 25%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 
-#intro h1 {
-	font-size: 5em;
+#intro_text h1 {
+	font-size: 3.5em;
 	font-weight: 800;
 }
+
+#intro_text h2 {
+  font-size: 1em;
+  font-weight: 800;
+}
+
 
 #about {
 	background: rgb(250, 181, 181);
