@@ -196,7 +196,26 @@ html,body {
 
 /* 2. About Me */
 #about {
-  background: rgb(250, 181, 181);
+  background: white;
+  min-height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+}
+
+#about_headline {
+  text-align: center;
+  color: #727272;
+  padding: 20px;
+}
+
+#about_headline h2 {
+  text-transform: uppercase;
+}
+
+#about_pages {
+  flex: 1;
+  background: #ebd9c6;
+  padding: 20px;
 }
 
 /* 3. Education */
