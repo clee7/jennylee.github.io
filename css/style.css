@@ -195,14 +195,9 @@ html,body {
 }
 
 /* 2. About Me */
-#about {
-  background: white;
-  min-height: calc(100vh - 50px);
-  display: flex;
-  flex-direction: column;
-}
 
 #about_headline {
+  background: white;
   text-align: center;
   color: #727272;
   padding: 20px;
@@ -212,10 +207,44 @@ html,body {
   text-transform: uppercase;
 }
 
-#about_pages {
-  flex: 1;
+#table{
+  height: calc(100vh - 50px);
   background: #ebd9c6;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#cover {
+  margin: auto;
+  width: 75%;
+  height: 75%;
+  background: #409978;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#pages {
+  margin:auto;
+  width:95%;
+  height:97%;
+  background-color: #fcfbed;
+  border-radius: 15px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#bookmark {
+  width: 2%;
+  height: calc(100vh - 80px);
+  margin: auto;
+  margin-bottom: -30px;
+  background-color: #37729b;
+  border-radius: 0 0 5px 5px;
 }
 
 /* 3. Education */
