@@ -8,14 +8,21 @@ font-family: 'Nunito', sans-serif;*/
 }
 
 html,body { 
-  font-size: 100%;
+  font-size: 90%;
+}
+
+.content {
+  margin: 0px;
+  padding: 20px;
 }
 
 @media only screen and (max-device-width: 480px) {
   html {
-   font-size: 150%; 
+   font-size: 100%; 
   }
 }
+
+/* NavBar */
 
 .navbar-default {
   background-color: #ffdddd;
@@ -111,23 +118,23 @@ html,body {
 /* 1. Intro */
 .background {
   position: fixed;
+  top:0;
+  left:0;
   width:100%;
-  height:100vh;
+  min-height:100vh;
+  z-index: -1;
   background: url('/assets/intro_background.jpg');
-  background-size: cover;
   background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .jumbotron {
   background: transparent;
   width: 100%;
   height:100vh;
-  margin: 0px;
-  padding: 0px;
-}
-
-.content {
-  padding: 20px 20px;
 }
 
 #intro_text {
@@ -135,37 +142,45 @@ html,body {
   float: left;
   top: 60%;
   left: 50%;
-  width: 80%;
+  width: 75%;
   color: white;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 
 #intro_text h1 {
-  font-size: 3.5em;
+  font-size: 4.5em;
   letter-spacing: 5px;
   text-transform: uppercase;
   line-height: 0.5;
 }
 
 #intro_text h2 {
-    font-size: 1.4em;
+    font-size: 2em;
     font-weight:400;
     letter-spacing:2px;
+}
+
+.link {
+  font-size: 1.5em;
+  font-weight:700;
 }
 
 @media (max-width: 700px) {
   #intro_text h1 {
     font-size: 2.5em;
+    font-weight:700;
     line-height:1em;
     letter-spacing: 5px;
   }
 
   #intro_text h2 {
-    font-size: 1em;
-    font-weight:400;
-    letter-spacing:1px;
-}
+    font-size: 1.3em;
+  }
+
+  .link {
+    font-size: 1.5em;
+  }
 }
 
 
@@ -190,9 +205,15 @@ html,body {
 
 .nav-btn .link {
   color: #fff; 
-  font-weight:800;
+  font-weight:40000;
 }
 
+
+@media (max-width: 780px) {
+  #intro_text {
+    width:100%;
+  }
+}
 /* 2. About Me */
 
 #about_headline {
@@ -204,10 +225,16 @@ html,body {
 
 #about_headline h2 {
   text-transform: uppercase;
+  font-size: 2em;
+}
+
+#about_headline p {
+  font-weight: 400;
+  font-size:1.5em;
 }
 
 #table{
-  height: calc(100vh - 50px);
+  min-height: calc(100vh - 50px);
   background: #ebd9c6;
   display: flex;
   flex-direction: column;
@@ -222,7 +249,7 @@ html,body {
 }
 
 .wrapper:after {
-  padding-top: 66%;
+  padding-top:66%;
   display: block;
   content: '';
 }
@@ -259,9 +286,38 @@ html,body {
   width: 2%;
   height: calc(100vh - 80px);
   margin: auto;
-  margin-bottom: -30px;
+  margin-bottom: -20px;
   background-color: #37729b;
   border-radius: 0 0 5px 5px;
+}
+
+@media (max-width: 780px) {
+  #about_headline h2 {
+    font-size:2em;
+    text-transform:none;
+  }
+
+  #about_headline p {
+    font-size:1.3em;
+  }
+
+  #table{
+    min-height: calc(100vh - 50px);
+    background: #ebd9c6;
+    display:block;
+  }
+
+  .wrapper {
+    display: block;
+    width: 75%;
+  }
+
+  #cover {
+   
+  }
+  #pages {
+    border-radius: 25px;
+  }
 }
 
 /* 3. Education */
