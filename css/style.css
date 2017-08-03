@@ -302,7 +302,6 @@ html,body {
   }
 
   #table{
-    min-height: calc(100vh - 50px);
     background: #ebd9c6;
     display:block;
   }
