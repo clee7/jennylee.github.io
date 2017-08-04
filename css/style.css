@@ -279,6 +279,8 @@ html,body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 1;
+  position: relative;
 }
 
 #bookmark {
@@ -289,6 +291,20 @@ html,body {
   margin-bottom: -5%;
   background-color: #37729b;
   border-radius: 0 0 5px 5px;
+  z-index: 2;
+  left: 50%;
+  position: absolute;
+}
+
+#page_content {
+  z-index: 3;
+  position: relative;
+  height: inherit;
+  padding: 0% 2%;
+}
+
+.no_bullet {
+  list-style-type: none;
 }
 
 @media (max-width: 780px) {
