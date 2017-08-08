@@ -236,6 +236,8 @@ html,body {
 #table{
   background: #ebd9c6;
   width: 100%;
+  position: relative;
+  padding: 5%;
 }
 
 .wrapper {
@@ -258,8 +260,8 @@ html,body {
   right: 0;
   left: 0;
   margin: auto;
-  width: 70%;
-  height: 70%;
+  width: 85%;
+  height: 85%;
   background: #409978;
   border-radius: 25px;
   display: flex;
@@ -292,20 +294,22 @@ html,body {
 #book {
   z-index: 1;
   position: static;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
 }
 
 #page_content {
-  position: static;
+  position: absolute;
   z-index: 2;
-  top: 0px;
-  left: 0px;
   width: 100%;
   height: 100%;
-  padding: 0% 5%;
+  padding: 10% 15%;
+  top: 0%;
+  left: 0%;
+}
+
+.no_bullet {
+  list-style-type: none;
 }
 
 @media (max-width: 780px) {
@@ -334,6 +338,15 @@ html,body {
 
   #pages {
     border-radius: 25px;
+  }
+
+  #page_content {
+    position: static;
+    margin: auto;
+    width: 80%;
+    background: #fcfbed;
+    border-radius: 10px;
+    padding: 2%;
   }
 }
 
