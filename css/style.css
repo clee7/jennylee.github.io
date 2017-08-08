@@ -235,20 +235,18 @@ html,body {
 
 #table{
   background: #ebd9c6;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 100%;
 }
 
 .wrapper {
   margin: auto;
-  width: 90%;
+  width: 100%;
   display: inline-block;
   position: relative;
 }
 
 .wrapper:after {
-  padding-top:66%;
+  padding-top:60%;
   display: block;
   content: '';
 }
@@ -260,8 +258,8 @@ html,body {
   right: 0;
   left: 0;
   margin: auto;
-  width: 75%;
-  height: 75%;
+  width: 70%;
+  height: 70%;
   background: #409978;
   border-radius: 25px;
   display: flex;
@@ -278,9 +276,6 @@ html,body {
   margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  z-index: 1;
-  position: relative;
 }
 
 #bookmark {
@@ -291,20 +286,26 @@ html,body {
   margin-bottom: -5%;
   background-color: #37729b;
   border-radius: 0 0 5px 5px;
-  z-index: 2;
   left: 50%;
-  position: absolute;
+}
+
+#book {
+  z-index: 1;
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #page_content {
-  z-index: 3;
-  position: relative;
-  height: inherit;
-  padding: 0% 2%;
-}
-
-.no_bullet {
-  list-style-type: none;
+  position: static;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 0% 5%;
 }
 
 @media (max-width: 780px) {
@@ -330,6 +331,7 @@ html,body {
   #cover {
    
   }
+
   #pages {
     border-radius: 25px;
   }
