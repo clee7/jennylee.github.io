@@ -1,10 +1,9 @@
-/*font-family: 'Architects Daughter', cursive;
+/*font-family: 'Delius Unicase', cursive;
 font-family: 'Nunito', sans-serif;*/
 
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Nunito', sans-serif;
 }
 
 html,body { 
@@ -238,6 +237,7 @@ html,body {
   width: 100%;
   position: relative;
   padding: 5%;
+  font-family: 'Delius Unicase', cursive;
 }
 
 .wrapper {
@@ -312,6 +312,30 @@ html,body {
   list-style-type: none;
 }
 
+.page {
+  line-height: 2.5em;
+  color: #727272;
+}
+
+#right_page {
+  padding: 3% 0%;
+}
+
+#left_page h2 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align:center;
+}
+
+.question {
+  font-weight:bold;
+  font-size: 1em;
+}
+
+.indent_list {
+  padding-left:5%;
+}
+
 @media (max-width: 780px) {
   #about_headline h2 {
     font-size:2em;
@@ -347,6 +371,20 @@ html,body {
     background: #fcfbed;
     border-radius: 10px;
     padding: 2%;
+  }
+
+  .page {
+    padding: 0% 2%;
+    margin: 0% 2%;
+  }
+
+  .no_bullet {
+    padding: 0%;
+    margin: 0%;
+  }
+
+  #right_page {
+  padding: 0% 2%;
   }
 }
 
