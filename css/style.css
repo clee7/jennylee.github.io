@@ -160,18 +160,12 @@ html,body {
     letter-spacing:2px;
 }
 
-.link {
-  font-size: 1.5em;
-  font-weight:700;
-}
-
-
 .nav_btn{
-  border: 1px solid rgba(76, 67, 61, 0.8);
-  color: rgb(76, 67, 61);
+  border: 1px solid white;
+  color: white;
   margin-right: 10px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-size: 1.5em;
   width: auto;
   display: inline-block;
   font-size: 0.8em;
@@ -188,8 +182,8 @@ html,body {
 
 .nav_btn:hover,
 .nav_btn:focus {
-	background: rgba(76, 67, 61, 0.8);
-	color: white;
+	background: white;
+	color: #727272;
 }
 
 
@@ -337,11 +331,13 @@ html,body {
   padding: 5px;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
+  color: #727272;
 }
 
 .grey_nav_btn:hover,
 .grey_nav_btn:focus {
   background: #d8d8d8;
+  color: white;
 }
 
 .lowercase {
