@@ -335,6 +335,13 @@ html,body {
   border: 1px solid #d8d8d8;
   margin: 0px;
   padding: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+.grey_nav_btn:hover,
+.grey_nav_btn:focus {
+  background: #d8d8d8;
 }
 
 .lowercase {
