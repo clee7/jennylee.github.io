@@ -23,6 +23,7 @@ html,body {
 
 .navbar-default {
   background-color:   rgba(76, 67, 61, 0.85);
+  border-color: unset;
 }
 .navbar-default .navbar-brand {
   color: #ffffff;
