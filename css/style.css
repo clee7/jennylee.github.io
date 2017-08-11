@@ -167,8 +167,8 @@ html,body {
 
 
 .nav_btn{
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid rgba(76, 67, 61, 0.8);
+  color: rgb(76, 67, 61);
   margin-right: 10px;
   text-transform: uppercase;
   font-weight: 400;
@@ -183,12 +183,16 @@ html,body {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   border-radius: 8px;
+  font-weight: bold;
 }
 
-.nav_btn .link {
-  color: #fff; 
-  font-weight:40000;
+.nav_btn:hover,
+.nav_btn:focus {
+	background: rgba(76, 67, 61, 0.8);
+	color: white;
 }
+
+
 
 
 @media (max-width: 780px) {
