@@ -1,10 +1,10 @@
 (function ($) {
   $(document).ready(function(){
     
-	// hide .navbar first
+	// hide .navbar when website is loaded
 	$(".navbar").hide();
 	
-	// fade in .navbar
+	// fade in .navbar as scroll away from top
 	$(function () {
 		$(window).scroll(function () {
             // set distance user needs to scroll before we fadeIn navbar
@@ -18,10 +18,27 @@
 	
 	});
 
-	// scroll .window to show content 
+	// scroll .window to show content hidden by navbar when anchor clicked
  	var shiftWindow = function() { scrollBy(0, -50) };
  	if (location.hash) shiftWindow();
  	window.addEventListener("hashchange", shiftWindow);
+
+ 	// .navbar-collapse (menu) close on anchor clicked
+ 	$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+
+    // .navbar-collapse (menu) close on click outside
+    $(document).click(function (event) {
+    var clickover = $(event.target);
+    var $navbar = $(".navbar-collapse");               
+    var _opened = $navbar.hasClass("in");
+    if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
+        $navbar.collapse('hide');
+    }
+});
+});
 
 
 });
