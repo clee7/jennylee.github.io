@@ -22,7 +22,7 @@ html,body {
 /* NavBar */
 
 .navbar-default {
-  background-color:   rgba(76, 67, 61, 0.85);
+  background-color: rgba(76, 67, 61, 0.85);
   border: unset;
 }
 .navbar-default .navbar-brand {
@@ -284,7 +284,7 @@ html,body {
   margin:auto;
   width:95%;
   height:97%;
-  background-color: #fcfbed;
+  background-color: #fffef7;
   border-radius: 15px;
   margin: auto;
   display: flex;
@@ -352,7 +352,6 @@ html,body {
 }
 
 #left_page h2 {
-  color: #294430;
   font-size: 2.5em;
   font-weight: bold;
   text-align:center;
@@ -378,7 +377,7 @@ html,body {
     position: static;
     margin: auto;
     width: 100%;
-    background: #fcfbed;
+    background: #fffef7;
     border-radius: 5px;
     padding: 2%;
   }
