@@ -1,16 +1,8 @@
 
-* {
-  margin: 0px;
-  padding: 0px;
-}
 
 html,body { 
   font-size: 90%;
-}
-
-.content {
-  margin: 0px;
-  padding: 20px;
+  font-family: 'Nunito', sans-serif;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -122,9 +114,6 @@ html,body {
   z-index: -1;
   background: url('/assets/intro_background.jpg');
   background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -143,39 +132,35 @@ html,body {
   left: 50%;
   width: 75%;
   color: white;
+  -webkit-transform: transform(-50%, -50%);
+  -ms-transform: transform(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
 }
 
 #intro_text h1 {
   font-size: 4.5em;
-  letter-spacing: 5px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  line-height: 0.5;
 }
 
 #intro_text h2 {
-    font-size: 2em;
-    font-weight:400;
-    letter-spacing:2px;
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: 0.1em;
 }
 
 .nav_btn{
   border: 1px solid white;
   color: white;
-  margin-right: 10px;
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
   width: auto;
   display: inline-block;
-  font-size: 0.8em;
-  line-height: 1em;
   padding: 7px 18px;
-  margin-top: 0.8em;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  margin-right: 1em;
+  margin-top: 1em;
   border-radius: 8px;
   font-weight: bold;
 }
@@ -205,8 +190,9 @@ html,body {
     font-size: 1.3em;
   }
 
-  .link {
-    font-size: 1.5em;
+  .nav_btn {
+    font-size: 1em;
+
   }
 }
 
@@ -224,6 +210,7 @@ html,body {
 #about_headline h2 {
   text-transform: uppercase;
   font-size: 2em;
+  letter-spacing: 0.1em;
 }
 
 #about_headline p {
@@ -326,12 +313,16 @@ html,body {
 }
 
 .grey_nav_btn {
-  border: 1px solid #d8d8d8;
-  margin: 0px;
-  padding: 5px;
-  font-family: 'Raleway', sans-serif;
+  font-size:  0.7em;
   font-weight: 300;
   color: #727272;
+  border: 1px solid #d8d8d8;
+  padding: 0px 6px;
+  margin: 0px;
+  margin-top: 5px;
+  margin-right: 3px;
+  font-family: 'Raleway', sans-serif;
+  
 }
 
 .grey_nav_btn:hover,
@@ -404,17 +395,13 @@ html,body {
   }
 }
 
-/* 3. Education */
-#education {
+/* 3. Resume */
+#resume {
   background: rgb(193, 193, 198);
 }
 
-/* 4. Work Experiences*/
-#work {
+/* 4. Projects*/
+#projects {
   background: rgb(250, 181, 181);
 }
 
-/* 5. Fun Projects */
-#fun {
-  background: rgb(193, 193, 198);
-}
