@@ -139,12 +139,14 @@ html,body {
 }
 
 #intro_text h1 {
+  margin: 0px;
   font-size: 4.5em;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
 #intro_text h2 {
+  margin: 0px;
   font-size: 2em;
   font-weight: 400;
   letter-spacing: 0.1em;
