@@ -420,7 +420,6 @@ html,body {
 #skills_content {
   font-family: 'Raleway', sans-serif;
   width: 75%;
-  max-width: 1000px;
   margin: auto;
 }
 
@@ -459,6 +458,10 @@ html,body {
   margin: 7px 7px;
   font-size: 1.2em;
   color: #96ebff;
+}
+
+@media (min-width: 1400px) {
+
 }
 
 @media (max-width: 1022px) {
