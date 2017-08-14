@@ -11,6 +11,11 @@ html,body {
   }
 }
 
+.content {
+  padding: 20px;
+  margin: 0px;
+}
+
 /* NavBar */
 
 .navbar-default {
@@ -292,6 +297,7 @@ html,body {
 /* About Me Content */
 .no_bullet {
   list-style-type: none;
+  padding-left: 0;
 }
 
 .page {
@@ -397,12 +403,84 @@ html,body {
   }
 }
 
-/* 3. Resume */
+/* 3. Skills */
+#skills {
+  background: #262626;
+  color: white;
+}
+
+.skills_header {
+  color: white;
+  font-size: 3em;
+  border-bottom: #96ebff 2px solid;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5em;
+}
+
+#skills_content {
+  font-family: 'Raleway', sans-serif;
+  width: 75%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skills_subheader {
+  color: #96ebff;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.5em;
+  text-align: center;
+}
+
+.languages {
+  margin: auto;
+}
+
+.languages li {
+  display:inline-block;
+  border: white 1px solid;
+  border-radius: 50%;
+  height: calc(100vw / 11);
+  width: calc(100vw / 11);
+  margin: 10px;
+  line-height: calc(100vw / 11);
+  text-align: center;
+  font-size: 1.3em;
+  color: #96ebff;
+  font-weight: 300;
+
+}
+
+.tools li {
+  display: inline-block;
+  border: white 1px solid;
+  border-radius: 10px;
+  padding: 5px 14px;
+  margin: 7px 7px;
+  font-size: 1.2em;
+  color: #96ebff;
+}
+
+@media (max-width: 1022px) {
+  #skills_content {
+    width: 95%;
+  }
+
+  .languages li {
+    height: 90px;
+    width: 90px;
+    margin: 5px;
+    line-height: 90px;
+    font-size: 1em;
+  }
+}
+
+/* 4. Resume */
 #resume {
   background: rgb(193, 193, 198);
 }
 
-/* 4. Projects*/
+/* 5. Projects*/
 #projects {
   background: rgb(250, 181, 181);
 }
