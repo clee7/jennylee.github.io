@@ -3,7 +3,6 @@
 html,body { 
   font-size: 90%;
   font-family: 'Nunito', sans-serif;
-  background: #4d7564;
 }
 
 @media only screen and (max-device-width: 480px) {
