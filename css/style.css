@@ -402,15 +402,18 @@ html,body {
 
 /* 3. Skills */
 #skills {
-  background: #262626;
+  background: #c7e5e8;
   color: white;
-  padding-bottom: 20px;
+  padding: 5% 0%;
 }
 
 #skills_content {
   font-family: 'Raleway', sans-serif;
   width: 75%;
   margin: auto;
+  background: #2e4936;
+  border: 20px solid #7c4502;
+  position: relative;
 }
 
 .skills_header {
@@ -432,7 +435,7 @@ html,body {
 
 .languages span {
   display:inline-block;
-  border: #999999 0.5px solid;
+  border: #fff 0.5px solid;
   border-radius: 50%;
   height: calc(100vw / 11);
   width: calc(100vw / 11);
@@ -447,12 +450,32 @@ html,body {
 
 .tools li {
   display: inline-block;
-  border: #999999 0.5px solid;
+  border: #fff 0.5px solid;
   border-radius: 10px;
   padding: 5px 14px;
   margin: 7px 7px;
   font-size: 1.2em;
   color: #4bd5fc;
+}
+
+#chalk {
+  position: absolute;
+  right: 5%;
+  bottom: 0%;
+  height: 10px;
+  width: 50px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+#eraser {
+  position: absolute;
+  right: 10%;
+  bottom: 0%;
+  height: 30px;
+  width: 100px;
+  background: #222222;
+  border-radius:5px 5px 0px 0px;
 }
 
 @media (min-width: 1200px) {
