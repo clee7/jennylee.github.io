@@ -457,6 +457,7 @@ html,body {
   margin: 7px 7px;
   font-size: 1.2em;
   color: #4bd5fc;
+  z-index: 2;
 }
 
 #chalk {
@@ -467,6 +468,7 @@ html,body {
   width: 50px;
   background: #fff;
   border-radius: 2px;
+  z-index: 3;
 }
 
 #eraser {
