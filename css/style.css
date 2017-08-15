@@ -322,10 +322,11 @@ html,body {
   font-weight: 300;
   color: #727272;
   border: 1px solid #d8d8d8;
-  padding: 0px 6px;
+  padding: 0px 7px;
   margin: 0px;
   margin-top: 5px;
   margin-right: 3px;
+  line-height: 2em;
   font-family: 'Raleway', sans-serif;
   
 }
