@@ -698,24 +698,32 @@ html,body {
 
 /*===== Resonsive Vertical Timeline =====*/
 @media only screen and (max-width: 1000px) {
+
+  #timeline .center_line {
+    width: 2px;
+  }
+
   #timeline .timeline_start,
   #timeline .timeline_end {
     margin: 0;
+    padding: 5px;
+    width: 62px;
   }
+
   #timeline .center_line {
     margin-left: 0;
-    left: 50px;
+    left: 31px;
   }
   .timeline_article .meta_date {
     margin-left: 0;
-    left: 20px;
+    left: 0px;
   }
   .timeline_article .content_left_container,
   .timeline_article .content_right_container {
     max-width: 100%;
     width: auto;
     float: none;
-    margin-left: 110px;
+    margin-left: 75px;
     min-height: 53px;
   }
   .timeline_article .content_left_container {
