@@ -115,7 +115,7 @@ html,body {
   left:0;
   width:100%;
   min-height:100vh;
-  z-index: -1;
+  z-index: -100;
   background-color: #dd617c;
   background: url('/assets/intro_background.jpg');
   background-position: center;
@@ -515,8 +515,266 @@ html,body {
 
 /* 4. Resume */
 #resume {
-  background: rgb(193, 193, 198);
+  background: #e6e6e6;
+  font-family: 'Raleway', sans-serif;
 }
+
+#resume div.content {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+  color: #727272;
+}
+
+#resume h2 {
+  text-align: center;
+  font-size: 3em;
+  color: #505050;
+  text-transform: uppercase;
+}
+
+#resume h2 + p {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 0.5px #999999 solid;
+}
+
+/*===== Vertical Timeline =====*/
+#timeline {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#timeline .center_line {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  z-index: 0;
+  background: #00b0bd;
+}
+#timeline .timeline_start,
+#timeline .timeline_end {
+  display: table;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #00b0bd;
+  padding: 15px 23px;
+  color: #fff;
+  max-width: 5%;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+#timeline .timeline_content {
+  padding-top: 67px;
+  padding-bottom: 67px;
+}
+
+.timeline_article {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.timeline_article .content_left_container,
+.timeline_article .content_right_container {
+  max-width: 44%;
+  width: 100%;
+}
+
+.timeline_article .content_left,
+.timeline_article .content_right {
+  position: relative;
+  width: auto;
+  border: 1px solid #ddd;
+  background-color: rgba(255,255,255,.9);
+  box-shadow: 0 1px 3px rgba(0,0,0,.03);
+  padding: 20px 25px;
+  border-radius: 15px;
+}
+
+.timeline_article span.article_title{
+  display: block;
+  font-weight: 300;
+  font-size: 1.8em;
+  color: #00b0bd;
+}
+
+.timeline_article span.article_title span.description {
+  font-size:0.8em;
+  color: #727272;
+
+}
+
+
+.timeline_article .timeline_date {
+  font-weight: 700;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  color: #727272;
+  text-align: right;
+}
+
+.timeline_article p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  color: #727272;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  position: relative;
+}
+
+
+#relevant {
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.timeline_article .content_left_container {
+  float: left;
+}
+.timeline_article .content_right_container {
+  float: right;
+}
+.timeline_article .content_left:before,
+.timeline_article .content_right:before{
+  position: absolute;
+  top: 20px;
+  font-size: 23px;
+  font-family: "FontAwesome";
+  color: rgba(255,255,255,.9);
+}
+.timeline_article .content_left:before {
+  content: "\f0da";
+  right: -8px;
+}
+.timeline_article .content_right:before {
+  content: "\f0d9";
+  left: -8px;
+}
+.timeline_article .meta_date {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 62px;
+  height: 62px;
+  margin-left: -31px;
+  color: #fff;
+  border-radius: 100%;
+  background: #00b0bd;
+}
+
+.timeline_article .meta_date .year,
+.timeline_article .meta_date .month {
+  display: block;
+  text-align: center;
+  font-weight: 900;
+}
+
+.timeline_article .meta_date .year {
+  font-size: 30px;
+  line-height: 10px;
+}
+
+.timeline_article .meta_date .month {
+  padding: 12px;
+  font-size: 18px;
+  line-height: 10px;
+}
+/*===== // Vertical Timeline =====*/
+
+/*===== Resonsive Vertical Timeline =====*/
+@media only screen and (max-width: 1000px) {
+  #timeline .timeline_start,
+  #timeline .timeline_end {
+    margin: 0;
+  }
+  #timeline .center_line {
+    margin-left: 0;
+    left: 50px;
+  }
+  .timeline_article .meta_date {
+    margin-left: 0;
+    left: 20px;
+  }
+  .timeline_article .content_left_container,
+  .timeline_article .content_right_container {
+    max-width: 100%;
+    width: auto;
+    float: none;
+    margin-left: 110px;
+    min-height: 53px;
+  }
+  .timeline_article .content_left_container {
+    margin-bottom: 20px;
+  }
+  .timeline_article .content_left,
+  .timeline_article .content_right {
+    padding: 10px 25px;
+    min-height: 65px;
+  }
+  .timeline_article .content_left:before {
+    content: "\f0d9";
+    left: -8px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .timeline_article p {
+    margin: 0;
+  }
+  .timeline_article p span.article-number {
+    display: none;
+  }
+  
+}
+/*===== // Resonsive Vertical Timeline =====*/
+
+/*===== Link to Resume pdf =====*/
+
+.resume_link_wrapper {
+  width: 100%;
+  height: 100px;
+}
+
+#resume .block_btn {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background: #00b0bd;
+  color: #e6e6e6;
+}
+
+.block_btn .text {
+  position: absolute;
+  line-height: 100px;
+  text-align: center;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+#resume .block_btn:hover,
+#resume .block_btn:focus {
+  background: #727272;
+}
+
+/*===== // Link to Resume pdf =====*/
 
 /* 5. Projects*/
 #projects {
