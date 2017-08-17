@@ -178,7 +178,7 @@ html,body {
 	color: #727272;
 }
 
-@media (max-width: 780px) {
+@media screen and (max-width: 780px) {
   #intro_text {
     width:100%;
   }
@@ -361,7 +361,7 @@ html,body {
   text-align:center;
 }
 
-@media (max-width: 993px) {
+@media screen and (max-width: 993px) {
   #about_headline h2 {
     font-size:2em;
     text-transform:none;
@@ -708,6 +708,7 @@ html,body {
     margin: 0;
     padding: 5px;
     width: 62px;
+    max-width: unset;
   }
 
   #timeline .center_line {
@@ -743,9 +744,6 @@ html,body {
 @media only screen and (max-width: 400px) {
   .timeline_article p {
     margin: 0;
-  }
-  .timeline_article p span.article-number {
-    display: none;
   }
   
 }
