@@ -567,8 +567,8 @@ html,body {
   background: #00b0bd;
   padding: 15px 23px;
   color: #fff;
-  max-width: 70px;
-  width: 100%;
+  min-width: 62px;
+  width: 5%;
   text-align: center;
   margin: 0 auto;
   position: relative;
