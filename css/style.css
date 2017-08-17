@@ -409,7 +409,7 @@ html,body {
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 375px) {
   .page {
     line-height: 28px;
   }
@@ -520,24 +520,15 @@ html,body {
     font-size: 18px;
   }
 
-  .tool li {
+  .tools li {
     font-size: 18px;
   }
 
 }
 
 @media screen and (max-width: 996px) {
-  #skills_content {
-    width: 95%;
-  }
-
-  .skill_header {
-    font-size: 24px;
-    letter-spacing: 2px;
-  }
-
   .languages span {
-    border: #fff 0.5px solid;
+    border: #fff 1px solid;
     border-radius: 10px;
     padding: 5px 14px;
     margin: 5px;
@@ -547,8 +538,41 @@ html,body {
     font-size: 14px;
   }
 
-    .tool li {
+  .tools li {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #skills_content {
+    width: 95%;
+    border: 10px solid #7c4502;
+    padding: 5px;
+
+  }
+
+  .skills_header {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+  }
+
+  .skills_subheader {
+    margin: 7px;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  .languages span {
+    border-color: #727272;
+    padding: 3px 10px;
+    margin: 3px;
+  }
+
+  .tools li {
+    border-color: #727272;
+    padding: 3px 10px;
+    margin: 3px;
   }
 }
 
@@ -565,19 +589,24 @@ html,body {
   color: #727272;
 }
 
-#resume h2 {
-  /*text-align: center;*/
+.resume_headline {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-bottom: 0.5px #999999 solid;
+
+}
+
+.resume_headline span {
   font-size: 36px;
   color: #505050;
   text-transform: uppercase;
+  margin-left: 20px;
 }
 
-#resume h2 + p {
-  font-size: 24px;
-  text-align: center;
-  margin-bottom: 30px;
-  padding-bottom: 10px;
-  border-bottom: 0.5px #999999 solid;
+.resume_headline a {
+  float: right;
+  margin-right: 20px;
 }
 
 /*===== Vertical Timeline =====*/
@@ -647,12 +676,12 @@ html,body {
 .timeline_article span.article_title{
   display: block;
   font-weight: 300;
-  font-size: 26px;
+  font-size: 24px;
   color: #7cacf4;
 }
 
 .timeline_article span.article_title span.description {
-  font-size:20px;
+  font-size:18px;
   color: #727272;
 
 }
@@ -756,6 +785,8 @@ html,body {
 
   #timeline .center_line {
     width: 2px;
+    margin-left: 0;
+    left: 31px;
   }
 
   #timeline .timeline_start,
@@ -766,14 +797,11 @@ html,body {
     max-width: unset;
   }
 
-  #timeline .center_line {
-    margin-left: 0;
-    left: 31px;
-  }
   .timeline_article .meta_date {
     margin-left: 0;
     left: 0px;
   }
+
   .timeline_article .content_left_container,
   .timeline_article .content_right_container {
     max-width: 100%;
@@ -796,46 +824,50 @@ html,body {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
+  #timeline .timeline_content {
+    padding: 5px;
+  }
+
+  #timeline .center_line {
+    display: none;
+  }
+
+  #timeline .timeline_start,
+  #timeline .timeline_end {
+    display: none;
+  }
+
+  .timeline_article .meta_date {
+    display: none;
+  }
+  
   .timeline_article p {
     margin: 0;
+  }
+
+  .timeline_article .content_left_container,
+  .timeline_article .content_right_container {
+    margin: 0px;
+  }
+
+  .timeline_article .content_left,
+  .timeline_article .content_right {
+    padding: 10px 25px;
+    min-height: 65px;
+  }
+
+  .timeline_article .content_left:before {
+    content: unset;
+  }
+
+  .timeline_article .content_right:before {
+    content: unset;
   }
   
 }
 /*===== // Resonsive Vertical Timeline =====*/
 
-/*===== Link to Resume pdf =====*/
-
-.resume_link_wrapper {
-  width: 100%;
-  height: 100px;
-}
-
-#resume .block_btn {
-  position: absolute;
-  width: 100%;
-  height: 100px;
-  background: #7cacf4;
-  color: #e6e6e6;
-}
-
-.block_btn .text {
-  position: absolute;
-  line-height: 100px;
-  text-align: center;
-  width: 100%;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 700;
-  font-size: 2em;
-  text-transform: uppercase;
-}
-
-#resume .block_btn:hover,
-#resume .block_btn:focus {
-  background: #727272;
-}
-
-/*===== // Link to Resume pdf =====*/
 
 /* 5. Projects*/
 #projects {
