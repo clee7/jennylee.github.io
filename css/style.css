@@ -16,7 +16,6 @@ html,body {
 }
 
 /* NavBar */
-
 .navbar-default {
   background-color: rgba(79, 112, 88, 1);
   border: unset;
@@ -353,6 +352,10 @@ html,body {
 
 #right_page {
   padding: 3% 0%;
+}
+
+#left_page {
+  padding: 0% 3%;
 }
 
 #left_page h2 {
