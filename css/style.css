@@ -1,14 +1,7 @@
 
 
 html,body { 
-  font-size: 90%;
   font-family: 'Nunito', sans-serif;
-}
-
-@media only screen and (max-device-width: 480px) {
-  html {
-   font-size: 100%; 
-  }
 }
 
 .content {
@@ -144,30 +137,30 @@ html,body {
 
 #intro_text h1 {
   margin: 0px;
-  font-size: 4.5em;
-  letter-spacing: 0.2em;
+  font-size: 62px;
+  letter-spacing: 5px;
   text-transform: uppercase;
 }
 
 #intro_text h2 {
   margin: 0px;
-  font-size: 2em;
+  font-size: 26px;
   font-weight: 400;
-  letter-spacing: 0.1em;
+  letter-spacing: 2px;
 }
 
 .nav_btn{
-  border: 1px solid white;
+  /*border: 1px solid white;*/
   color: white;
   text-transform: uppercase;
-  font-size: 1.2em;
-  letter-spacing: 0.2em;
+  font-size: 16px;
+  letter-spacing: 1px;
   width: auto;
   display: inline-block;
   padding: 7px 18px;
-  margin-right: 1em;
-  margin-top: 1em;
-  border-radius: 8px;
+  margin-right: 7px;
+  margin-top: 7px;
+  border-radius: 10px;
   font-weight: bold;
 }
 
@@ -183,25 +176,26 @@ html,body {
   }
 
   #intro_text h1 {
-    font-size: 2.5em;
+    font-size: 26px;
     font-weight:700;
-    line-height:1em;
+    line-height:26px;
     letter-spacing: 5px;
   }
 
   #intro_text h2 {
-    font-size: 1.3em;
+    font-size: 14px;
   }
 
   .nav_btn {
-    font-size: 1em;
+    font-size: 16px;
+  }
 
+  .intro_nav_btn {
+    display: block;
   }
 }
 
 /* 2. About Me */
-
-
 /* Headline*/
 #about_headline {
   background: rgba(76, 67, 61, 0.8);
@@ -212,13 +206,12 @@ html,body {
 
 #about_headline h2 {
   text-transform: uppercase;
-  font-size: 2em;
-  letter-spacing: 0.1em;
+  font-size: 28px;
 }
 
 #about_headline p {
   font-weight: 400;
-  font-size:1.5em;
+  font-size:20px;
 }
 
 /* Table */
@@ -232,6 +225,13 @@ html,body {
 
 
 /* Book Background */
+#book_wrapper {
+  width: 100%;
+  max-width: 1100px;
+  position: relative;
+  margin: auto;
+}
+
 #book {
   z-index: 1;
   position: static;
@@ -297,19 +297,19 @@ html,body {
 }
 
 .page {
-  line-height: 2.5em;
+  line-height: 32px;
   color: #727272;
 }
 
 .question {
   font-weight:500;
-  font-size:1.2em;
+  font-size:14px;
   text-transform: uppercase;
 }
 
 .answer {
   font-weight: 300;
-  font-size:1.2em;
+  font-size: 14px;
 }
 
 .indent_list {
@@ -317,15 +317,12 @@ html,body {
 }
 
 .grey_nav_btn {
-  font-size:  0.7em;
+  font-size:  12px;
   font-weight: 300;
   color: #727272;
-  border: 1px solid #d8d8d8;
   padding: 0px 7px;
-  margin: 0px;
-  margin-top: 5px;
-  margin-right: 3px;
-  line-height: 2em;
+  margin: 5px 3px;
+  line-height: 24px;
   font-family: 'Raleway', sans-serif;
   
 }
@@ -345,7 +342,7 @@ html,body {
   z-index: 2;
   width: 100%;
   height: 100%;
-  padding: 10% 15%;
+  padding: 7% 12%;
   top: 0%;
   left: 0%;
 }
@@ -359,19 +356,26 @@ html,body {
 }
 
 #left_page h2 {
-  font-size: 2.5em;
+  font-size: 36px;
   font-weight: bold;
   text-align:center;
 }
 
-@media screen and (max-width: 993px) {
+@media screen and (max-width: 996px) {
+  #about_headline {
+    margin: 0;
+    padding: 2px 10px;
+    text-align: left;
+  }
+
   #about_headline h2 {
-    font-size:2em;
+
+    font-size:20px;
     text-transform:none;
   }
 
   #about_headline p {
-    font-size:1.3em;
+    font-size:16px;
   }
 
   #book {
@@ -379,14 +383,15 @@ html,body {
   }
 
   #page_content {
+    margin:0;
     margin:auto;
-    border: 15px solid #8bc49b;
+    border: 10px solid #8bc49b;
     position: static;
     margin: auto;
     width: 100%;
     background: #fffef7;
     border-radius: 5px;
-    padding: 2%;
+    padding: 0px 3px;
   }
 
   .page {
@@ -404,6 +409,22 @@ html,body {
   }
 }
 
+@media screen and (max-width: 370px) {
+  .page {
+    line-height: 28px;
+  }
+
+  .question {
+    font-size:14px;
+    text-transform: uppercase;
+  }
+
+  .answer {
+    font-size: 14px;
+  }
+}
+
+
 /* 3. Skills */
 #skills {
   background: #c7e5e8;
@@ -413,7 +434,8 @@ html,body {
 
 #skills_content {
   font-family: 'Raleway', sans-serif;
-  width: 75%;
+  max-width: 900px;
+  width: 90%;
   margin: auto;
   background: #2e4936;
   border: 20px solid #7c4502;
@@ -422,10 +444,11 @@ html,body {
 
 .skills_header {
   color: white;
-  font-size: 3em;
+  font-size: 42px;
+  letter-spacing: 4px;
   border-bottom: #4bd5fc 4px solid;
-  letter-spacing: 0.1em;
-  margin-bottom: 0.5em;
+  padding-bottom: 5px;
+  margin-bottom: 12px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -434,7 +457,7 @@ html,body {
   color: white;
   text-transform: uppercase;
   font-weight: 400;
-  letter-spacing: 0.5em;
+  letter-spacing: 2px;
 }
 
 .languages span {
@@ -443,10 +466,10 @@ html,body {
   border-radius: 50%;
   height: calc(100vw / 11);
   width: calc(100vw / 11);
-  margin: 10px;
+  margin: 5px;
   line-height: calc(100vw / 11);
   text-align: center;
-  font-size: 1.3em;
+  font-size: 16px;
   color: #4bd5fc;
   font-weight: 300;
 
@@ -458,7 +481,7 @@ html,body {
   border-radius: 10px;
   padding: 5px 14px;
   margin: 7px 7px;
-  font-size: 1.2em;
+  font-size: 16px;
   color: #4bd5fc;
   z-index: 2;
 }
@@ -484,35 +507,48 @@ html,body {
   border-radius:5px 5px 0px 0px;
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   #skills_content {
     width: 900px;
   }
 
-  .languages span{
-    height: 100px;
-    width: 100px;
+  .languages span {
+    height: 110px;
+    width: 110px;
     margin: 5px;
-    line-height: 100px;
-    font-size: 1.4em;
+    line-height: 110px;
+    font-size: 18px;
+  }
+
+  .tool li {
+    font-size: 18px;
   }
 
 }
 
-@media screen and (max-width: 1022px) {
+@media screen and (max-width: 996px) {
   #skills_content {
     width: 95%;
+  }
+
+  .skill_header {
+    font-size: 24px;
+    letter-spacing: 2px;
   }
 
   .languages span {
     border: #fff 0.5px solid;
     border-radius: 10px;
     padding: 5px 14px;
-    margin: 7px 7px;
+    margin: 5px;
     height: unset;
     width: unset;
     line-height: unset;
-    font-size: 1.2em;
+    font-size: 14px;
+  }
+
+    .tool li {
+    font-size: 14px;
   }
 }
 
@@ -530,14 +566,14 @@ html,body {
 }
 
 #resume h2 {
-  text-align: center;
-  font-size: 3em;
+  /*text-align: center;*/
+  font-size: 36px;
   color: #505050;
   text-transform: uppercase;
 }
 
 #resume h2 + p {
-  font-size: 2em;
+  font-size: 24px;
   text-align: center;
   margin-bottom: 30px;
   padding-bottom: 10px;
@@ -559,7 +595,7 @@ html,body {
   left: 50%;
   margin-left: -2px;
   z-index: 0;
-  background: #00b0bd;
+  background: #7cacf4;
 }
 #timeline .timeline_start,
 #timeline .timeline_end {
@@ -567,7 +603,7 @@ html,body {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  background: #00b0bd;
+  background: #7cacf4;
   padding: 15px 23px;
   color: #fff;
   min-width: 62px;
@@ -611,12 +647,12 @@ html,body {
 .timeline_article span.article_title{
   display: block;
   font-weight: 300;
-  font-size: 1.8em;
-  color: #00b0bd;
+  font-size: 26px;
+  color: #7cacf4;
 }
 
 .timeline_article span.article_title span.description {
-  font-size:0.8em;
+  font-size:20px;
   color: #727272;
 
 }
@@ -624,8 +660,8 @@ html,body {
 
 .timeline_article .timeline_date {
   font-weight: 700;
-  font-size: 1.1em;
-  line-height: 1.5em;
+  font-size: 16px;
+  line-height: 20px;
   color: #727272;
   text-align: right;
 }
@@ -635,15 +671,15 @@ html,body {
   padding: 0;
   font-weight: 400;
   color: #727272;
-  font-size: 1.2em;
-  line-height: 1.5em;
+  font-size: 16px;
+  line-height: 24px;
   position: relative;
 }
 
 
 #relevant {
   font-weight: 700;
-  font-size: 0.9em;
+  font-size: 14px;
 }
 
 .timeline_article .content_left_container {
@@ -677,7 +713,7 @@ html,body {
   margin-left: -31px;
   color: #fff;
   border-radius: 100%;
-  background: #00b0bd;
+  background: #7cacf4;
 }
 
 .timeline_article .meta_date .year,
@@ -709,8 +745,8 @@ html,body {
   border-radius: 10px;
   padding: 3px 10px;
   margin: 3px;
-  font-size: 1.1em;
-  color: #00b0bd;
+  font-size: 14px;
+  color: #7cacf4;
 
 }
 /*===== // Vertical Timeline =====*/
@@ -779,7 +815,7 @@ html,body {
   position: absolute;
   width: 100%;
   height: 100px;
-  background: #00b0bd;
+  background: #7cacf4;
   color: #e6e6e6;
 }
 
