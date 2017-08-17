@@ -362,21 +362,6 @@ html,body {
 }
 
 @media screen and (max-width: 996px) {
-  #about_headline {
-    margin: 0;
-    padding: 2px 10px;
-    text-align: left;
-  }
-
-  #about_headline h2 {
-
-    font-size:20px;
-    text-transform:none;
-  }
-
-  #about_headline p {
-    font-size:16px;
-  }
 
   #book {
     display: none;
@@ -409,7 +394,22 @@ html,body {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
+  #about_headline {
+    margin: 0;
+    padding: 2px 10px;
+  }
+
+  #about_headline h2 {
+
+    font-size:20px;
+    text-transform:none;
+  }
+
+  #about_headline p {
+    font-size:16px;
+  }
+
   .page {
     line-height: 28px;
   }
