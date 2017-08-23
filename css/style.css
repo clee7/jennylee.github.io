@@ -942,6 +942,36 @@ html,body {
   height: 200px;
 }
 
+#cat-and-house > div.project_picture {
+  background: url('/');
+  background-position: center;
+  background-size: cover;
+}
+
+#machine-learning > div.project_picture {
+  background: url('/');
+  background-position: center;
+  background-size: cover;
+}
+
+#portfolio-web > div.project_picture {
+  background: url('/assets/personalWeb.png');
+  background-position: center;
+  background-size: cover;
+}
+
+#painting > div.project_picture {
+  background: url('/');
+  background-position: center;
+  background-size: cover;
+}
+
+#bullet-journal > div.project_picture {
+  background: url('/');
+  background-position: center;
+  background-size: cover;
+}
+
 #ocarina > div.project_picture {
   background: url('/');
   background-position: center;
