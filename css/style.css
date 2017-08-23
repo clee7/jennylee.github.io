@@ -943,7 +943,7 @@ html,body {
 }
 
 #ocarina > div.project_picture {
-  background: url('/assets/ocarina.jpg');
+  background: url('/');
   background-position: center;
   background-size: cover;
 }
