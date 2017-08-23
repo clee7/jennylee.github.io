@@ -901,15 +901,16 @@ html,body {
 }
 
 .project_card {
+  height: 500px;
+  width: 320px;
   display: inline-block;
   background: rgb(254, 255, 242);
-  min-height: 450px;
-  width: 320px;
   margin: 20px 15px;
   padding: 15px;
   box-shadow: 10px 7px rgba(0, 0, 0, 0.1);
   outline: 1px dashed rgb(196, 179, 159);
   outline-offset: -5px;
+  vertical-align: bottom;
 }
 
 .project_picture {
@@ -918,6 +919,8 @@ html,body {
   background: white;
   height: 200px;
   margin: 5px auto;
+  outline: 1px dashed white;
+  outline-offset: -5px;
 }
 
 .project_header {
@@ -926,6 +929,7 @@ html,body {
   font-weight: 800;
   margin-bottom:2px; 
   letter-spacing: 3px;
+  color: rgb(211, 118, 130);
 }
 
 .project_header a {
@@ -935,6 +939,7 @@ html,body {
 .project_desc {
   text-align: left;
   padding: 5px;
+  height: 200px;
 }
 
 #ocarina > div.project_picture {
