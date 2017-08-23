@@ -992,6 +992,7 @@ html,body {
 /* Footer */
 #footer {
   color: #727272;
+  background: rgb(234, 234, 234);
 }
 
 div.left, div.right {
