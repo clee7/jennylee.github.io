@@ -1,11 +1,9 @@
-
-
 html,body { 
   font-family: 'Nunito', sans-serif;
 }
 
 .content {
-  padding: 20px;
+  padding: 30px 20px;
 }
 
 /* NavBar */
@@ -446,10 +444,10 @@ html,body {
   color: white;
   font-size: 42px;
   letter-spacing: 4px;
+  width: 150px;
   border-bottom: #4bd5fc 4px solid;
   padding-bottom: 5px;
   margin-bottom: 12px;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -577,12 +575,13 @@ html,body {
 
 /* 4. Resume */
 #resume {
-  background: #e6e6e6;
+  background: rgb(242, 242, 242);
   font-family: 'Raleway', sans-serif;
+  padding-bottom: 30px;
 }
 
 #resume div.content {
-  max-width: 1100px;
+  max-width: 1000px;
   width: 100%;
   margin: auto;
   color: #727272;
@@ -590,23 +589,22 @@ html,body {
 
 .resume_headline {
   width: 100%;
+  text-align: center;
   padding: 5px;
   margin-bottom: 20px;
-  border-bottom: 0.5px #999999 solid;
+  border-bottom: 0.5px #e1e1e1 solid;
 
 }
 
 .resume_headline span {
   font-size: 36px;
-  color: #505050;
   text-transform: uppercase;
+  color: #727272;
   margin-left: 20px;
+  letter-spacing: 5px;
 }
 
-.resume_headline a {
-  float: right;
-  margin-right: 20px;
-}
+
 
 /*===== Vertical Timeline =====*/
 #timeline {
@@ -775,7 +773,7 @@ html,body {
 /*===== // Vertical Timeline =====*/
 
 /*===== Resonsive Vertical Timeline =====*/
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
 
   #timeline .center_line {
     width: 2px;
@@ -865,42 +863,90 @@ html,body {
 
 /* 5. Projects*/
 #projects {
-  background: white;
+  background: rgb(196, 179, 159);
+  padding-top: 30px;
 }
 
 #projects div.content {
-  max-width: 1200px;
+  max-width: 1100px;
   width: 100%;
   margin: auto;
   color: #727272;
 }
 
-#projects div.content h2 {
+#projects_headline{
   text-align: center;
-  font-size: 42px;
-  letter-spacing: 3px;
-  margin-bottom: 30px;
+  margin: auto;
+  background: rgb(211, 118, 130);
+  padding: 15px 10px;
+  box-shadow: 10px 7px rgba(0, 0, 0, 0.1)
 }
+
+#projects_headline > p{
+  font-size: 40px;
+  line-height: 45px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: white;
+}
+
 
 #projects_content {
   text-align: center;
   margin: 0 auto;
-  max-width: 1200px;
+  padding: 0;
 }
 
 .project_card {
   display: inline-block;
+  background: rgb(254, 255, 242);
+  min-height: 450px;
+  width: 320px;
+  margin: 20px 15px;
+  box-shadow: 10px 7px rgba(0, 0, 0, 0.1)
+}
+
+.project_picture {
+  display: inline-block;
+  width: 310px;
   background: white;
-  margin: 20px;
-  padding: 15px;
-  min-height: 350px;
-  max-width: 300px;
-  border: 3px solid #727272;
+  height: 200px;
+  margin: 5px auto;
   border-radius: 10px;
+  border: 1px solid #e8e8e8;
 }
 
 .project_header {
   font-size: 24px;
   text-align: center;
   font-weight: 800;
+  margin-bottom:2px; 
+  letter-spacing: 3px;
+}
+
+.project_header a {
+  color: rgb(211, 118, 130);
+}
+
+.project_desc {
+  text-align: left;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 420px) {
+  .project_card {
+    width: 100%;
+    margin: 15px auto;
+  }
+  
+  .project_picture {
+  display: inline-block;
+  width: 95%;
+  background: white;
+  height: 200px;
+  margin: 5px auto;
+  border-radius: 10px;
+  border: 1px solid #e8e8e8;
+}
 }
