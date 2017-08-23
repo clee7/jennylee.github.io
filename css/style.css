@@ -988,3 +988,34 @@ html,body {
     width: 95%;
   }
 }
+
+/* Footer */
+#footer {
+  color: #727272;
+}
+
+div.left, div.right {
+  display: inline-block;
+  height: 100px;
+  width: 50%;
+  margin: 0;
+  padding: 0px 10px;
+  vertical-align: bottom;
+}
+
+div.left {
+  float: left;
+}
+
+div.right {
+  float: right;
+}
+
+#copy-right {
+  line-height: 100px;
+}
+
+#footer-contacts {
+  line-height: 100px;
+  text-align: right;
+}
