@@ -1032,3 +1032,20 @@ div.right {
   margin: 0;
   padding: 0;
 }
+
+@media screen and (max-width: 450px) {
+  div.left, div.right {
+    float: unset;
+    height: unset;
+  }
+
+  #copy-right, #footer-contacts {
+    line-height: 25px;
+    text-align: left;
+    height: 25px;
+  }
+
+  #copy-right {
+    margin-top: 25px;
+  }
+}
