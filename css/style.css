@@ -999,6 +999,8 @@ html,body {
 #footer {
   color: #727272;
   background: rgb(234, 234, 234);
+  height: 100px;
+  width: 100%;
 }
 
 div.left, div.right {
