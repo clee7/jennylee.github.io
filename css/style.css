@@ -948,6 +948,10 @@ html,body {
   height: 200px;
 }
 
+.project_desc > p > a {
+  color: rgb(211, 118, 130);
+}
+
 #cat-and-house > div.project_picture {
   background: url('/assets/HouseCat.jpg');
   background-position: center;
@@ -999,15 +1003,15 @@ html,body {
 #footer {
   color: #727272;
   background: rgb(234, 234, 234);
-  height: 150px;
+  height: 115px;
   width: 100%;
 }
 
 div.left, div.right {
   display: inline-block;
-  height: 100px;
+  height: 100%;
   margin: 0;
-  padding: 0px 10px;
+  padding: 0;
   vertical-align: bottom;
 }
 
@@ -1020,10 +1024,16 @@ div.right {
 }
 
 #copy-right {
-  line-height: 100px;
+  height: 100%;
+  line-height: 115px;
+  margin: 0;
+  padding: 0 10px;
 }
 
 #footer-contacts {
-  line-height: 100px;
   text-align: right;
+  height: 100%;
+  line-height: 115px;
+  margin: 0;
+  padding: 0;
 }
