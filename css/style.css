@@ -8,9 +8,9 @@ html,body {
 
 /* NavBar */
 .navbar {
-  --navbar-color: rgb(101, 171, 188);
+  --navbar-color: rgb(102, 124, 160);
   --navbar-font-color: rgb(255, 255, 255);
-  --navbar-on-hover: rgb(60, 89, 96);
+  --navbar-on-hover: rgb(200, 200, 200);
   --navbar-hamb-hover: rgba(250,250,250,0.4);
 }
 
@@ -176,7 +176,7 @@ html,body {
 
 /* 2. About Me */
 #about_headline {
-  background: rgb(101, 171, 188);
+  background: rgb(112, 135, 119);
   text-align: center;
   color: #ffffff;
   padding: 20px;
