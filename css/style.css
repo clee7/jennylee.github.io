@@ -168,7 +168,11 @@ html,body {
 	color: #727272;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 450px) {
+  .background {
+    background: url('/assets/intro_background_mini_mobile.jpg');
+  }
+
   #intro_text {
     width:100%;
   }
