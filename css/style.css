@@ -7,59 +7,49 @@ html,body {
 }
 
 /* NavBar */
+.navbar {
+  --navbar-color: rgb(101, 171, 188);
+  --navbar-font-color: rgb(255, 255, 255);
+  --navbar-on-hover: rgb(60, 89, 96);
+  --navbar-hamb-hover: rgba(250,250,250,0.4);
+}
+
 .navbar-default {
-  background-color: rgba(79, 112, 88, 1);
+  background-color: var(--navbar-color);
   border: unset;
 }
-.navbar-default .navbar-brand {
-  color: #ffffff;
+.navbar-default .navbar-brand,
+.navbar-default .navbar-text,
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-toggle .icon-bar,
+.navbar-default .navbar-link {
+  color: var(--navbar-font-color);
 }
 .navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-  color: #8bc49b;
-}
-.navbar-default .navbar-text {
-  color: #ffffff;
-}
-.navbar-default .navbar-nav > li > a {
-  color: #ffffff;
-}
+.navbar-default .navbar-brand:focus,
 .navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #8bc49b;
-}
+.navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #8bc49b;
-}
-
+.navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-  color: #8bc49b;
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-link:hover {
+  color: var(--navbar-on-hover);
 }
-
 .navbar-default .navbar-toggle {
 	border: unset;
 }
-
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: rgba(250,250,250,0.4);
+  background-color: var(--navbar-hamb-hover);
 
 }
-
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: rgba(250,250,250,1);
+  background-color: var(--navbar-font-color);
 }
 
-.navbar-default .navbar-link {
-  color: #ffffff;
-}
-.navbar-default .navbar-link:hover {
-  color: #8bc49b;
-}
 
 @media (max-width: 2048px) {
   .navbar-header {
@@ -73,7 +63,7 @@ html,body {
   }
   .navbar-collapse {
       border-top: 1px solid transparent;
-      box-shadow: inset 0 1px 0  rgba(79, 112, 88, 1);
+      box-shadow: inset 0 1px 0  var(--navbar-color);
   }
   .navbar-fixed-top {
       top: 0;
@@ -111,7 +101,6 @@ html,body {
   background-position: center;
   background-size: cover;
 }
-
 .jumbotron {
   background: transparent;
   background-color: rgba(0, 0, 0, .1);
@@ -119,7 +108,6 @@ html,body {
   height:100vh;
   margin: 0;
 }
-
 #intro_text {
   position: relative;
   float: left;
@@ -132,23 +120,19 @@ html,body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
 #intro_text h1 {
   margin: 0px;
   font-size: 62px;
   letter-spacing: 5px;
   text-transform: uppercase;
 }
-
 #intro_text h2 {
   margin: 0px;
   font-size: 26px;
   font-weight: 400;
   letter-spacing: 2px;
 }
-
 .nav_btn{
-  /*border: 1px solid white;*/
   color: white;
   text-transform: uppercase;
   font-size: 16px;
@@ -161,56 +145,46 @@ html,body {
   border-radius: 10px;
   font-weight: bold;
 }
-
 .nav_btn:hover,
 .nav_btn:focus {
 	background: white;
 	color: #727272;
 }
-
 @media screen and (max-width: 450px) {
   .background {
     background: url('/assets/intro_background_mini_mobile.jpg');
   }
-
   #intro_text {
     width:100%;
   }
-
   #intro_text h1 {
     font-size: 26px;
     font-weight:700;
     line-height:26px;
     letter-spacing: 5px;
   }
-
   #intro_text h2 {
     font-size: 14px;
   }
-
   .nav_btn {
     font-size: 16px;
   }
-
   .intro_nav_btn {
     display: block;
   }
 }
 
 /* 2. About Me */
-/* Headline*/
 #about_headline {
-  background: rgba(76, 67, 61, 0.8);
+  background: rgb(101, 171, 188);
   text-align: center;
   color: #ffffff;
   padding: 20px;
 }
-
 #about_headline h2 {
   text-transform: uppercase;
   font-size: 28px;
 }
-
 #about_headline p {
   font-weight: 400;
   font-size:20px;
@@ -225,7 +199,6 @@ html,body {
   font-family: 'Raleway', sans-serif;
 }
 
-
 /* Book Background */
 #book_wrapper {
   width: 100%;
@@ -233,27 +206,23 @@ html,body {
   position: relative;
   margin: auto;
 }
-
 #book {
   z-index: 1;
   position: static;
   width: 100%;
   height: 100%;
 }
-
 .wrapper {
   margin: auto;
   width: 100%;
   display: inline-block;
   position: relative;
 }
-
 .wrapper:after {
   padding-top:60%;
   display: block;
   content: '';
 }
-
 #cover {
   position: absolute;
   top: 0;
@@ -270,7 +239,6 @@ html,body {
   justify-content: center;
   box-shadow: 10px 7px rgba(0, 0, 0, 0.1);
 }
-
 #pages {
   margin:auto;
   width:95%;
@@ -281,7 +249,6 @@ html,body {
   display: flex;
   flex-direction: column;
 }
-
 #bookmark {
   width: 2%;
   min-height: 110%;
@@ -298,27 +265,22 @@ html,body {
   list-style-type: none;
   padding-left: 0;
 }
-
 .page {
   line-height: 32px;
   color: #727272;
 }
-
 .question {
-  font-weight:500;
+  font-weight:700;
   font-size:14px;
   text-transform: uppercase;
 }
-
 .answer {
   font-weight: 300;
   font-size: 14px;
 }
-
 .indent_list {
   padding-left:10%;
 }
-
 .grey_nav_btn {
   font-size:  12px;
   font-weight: 300;
@@ -327,19 +289,15 @@ html,body {
   margin: 5px 3px;
   line-height: 24px;
   font-family: 'Raleway', sans-serif;
-  
 }
-
 .grey_nav_btn:hover,
 .grey_nav_btn:focus {
   background: #d8d8d8;
   color: white;
 }
-
 .lowercase {
   text-transform: lowercase;
 }
-
 #page_content {
   position: absolute;
   z-index: 2;
@@ -349,50 +307,38 @@ html,body {
   top: 0%;
   left: 0%;
 }
-
 #right_page {
   padding: 3% 0%;
 }
-
 #left_page {
   padding: 0% 3%;
 }
-
 #left_page h2 {
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 700;
   text-align:center;
 }
 
 @media screen and (max-width: 996px) {
-
   #book {
     display: none;
   }
-
   #page_content {
-    margin:0;
-    margin:auto;
-    border: 10px solid #8bc49b;
+    margin:0 auto;
     position: static;
-    margin: auto;
     width: 100%;
     background: #fffef7;
-    border-radius: 5px;
     padding: 0px 3px;
     box-shadow: 10px 7px rgba(0, 0, 0, 0.1);
   }
-
   .page {
     padding: 0% 2%;
     margin: 0% 2%;
   }
-
   .no_bullet {
     padding: 0%;
     margin: 0%;
   }
-
   #right_page {
   padding: 0% 2%;
   }
@@ -403,31 +349,24 @@ html,body {
     margin: 0;
     padding: 2px 10px;
   }
-
   #about_headline h2 {
-
     font-size:20px;
     text-transform:none;
   }
-
   #about_headline p {
     font-size:16px;
   }
-
   .page {
     line-height: 28px;
   }
-
   .question {
     font-size:14px;
     text-transform: uppercase;
   }
-
   .answer {
     font-size: 14px;
   }
 }
-
 
 /* 3. Skills */
 #skills {
@@ -435,18 +374,16 @@ html,body {
   color: white;
   padding: 5% 0%;
 }
-
 #skills_content {
   font-family: 'Raleway', sans-serif;
   max-width: 900px;
   width: 90%;
   margin: auto;
   background: #2e4936;
-  border: 20px solid #7c4502;
+  border: 20px solid rgb(76, 51, 14);
   position: relative;
   box-shadow: 10px 7px rgba(0, 0, 0, 0.1);
 }
-
 .skills_header {
   color: white;
   font-size: 42px;
@@ -457,14 +394,12 @@ html,body {
   margin-bottom: 12px;
   text-transform: uppercase;
 }
-
 .skills_subheader {
   color: white;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 2px;
 }
-
 .languages span {
   display: inline-block;
   border: #fff 0.5px solid;
@@ -477,9 +412,7 @@ html,body {
   font-size: 16px;
   color: #4bd5fc;
   font-weight: 300;
-
 }
-
 .tools li {
   display: inline-block;
   border: #fff 0.5px solid;
@@ -490,7 +423,6 @@ html,body {
   color: #4bd5fc;
   z-index: 2;
 }
-
 #chalk {
   position: absolute;
   right: 5%;
@@ -501,7 +433,6 @@ html,body {
   border-radius: 2px;
   z-index: 3;
 }
-
 #eraser {
   position: absolute;
   right: 10%;
@@ -516,7 +447,6 @@ html,body {
   #skills_content {
     width: 900px;
   }
-
   .languages span {
     height: 110px;
     width: 110px;
@@ -524,11 +454,9 @@ html,body {
     line-height: 110px;
     font-size: 18px;
   }
-
   .tools li {
     font-size: 18px;
   }
-
 }
 
 @media screen and (max-width: 996px) {
@@ -541,7 +469,6 @@ html,body {
     line-height: unset;
     font-size: 14px;
   }
-
   .tools li {
     font-size: 14px;
   }
@@ -552,27 +479,22 @@ html,body {
     width: 95%;
     border: 10px solid #7c4502;
     padding: 5px;
-
   }
-
   .skills_header {
     font-size: 24px;
     letter-spacing: 2px;
     margin-bottom: 5px;
   }
-
   .skills_subheader {
     margin: 7px;
     font-size: 18px;
     letter-spacing: 2px;
   }
-
   .languages span {
     border-color: #727272;
     padding: 3px 10px;
     margin: 3px;
   }
-
   .tools li {
     border-color: #727272;
     padding: 3px 10px;
@@ -582,12 +504,11 @@ html,body {
 
 /* 4. Resume */
 #resume {
-  background: rgb(93, 136, 147);
+  background: rgb(156, 188, 182);
   font-family: 'Raleway', sans-serif;
   position: relative;
   padding: 35px 0px;
 }
-
 #resume div.content {
   max-width: 950px;
   width: 100%;
@@ -597,16 +518,13 @@ html,body {
   background: rgb(250, 250, 250);
   box-shadow: 10px 7px rgba(0, 0, 0, 0.1);
 }
-
 .resume_headline {
   width: 100%;
   text-align: center;
   padding: 5px;
   margin-bottom: 20px;
   border-bottom: 0.5px #e1e1e1 solid;
-
 }
-
 .resume_headline span {
   font-size: 36px;
   text-transform: uppercase;
@@ -615,40 +533,32 @@ html,body {
   letter-spacing: 5px;
 }
 
-
-
 /*===== Vertical Timeline =====*/
 .timeline_container {
   width: 85%;
   margin: 0 auto;
 }
-
 .timeline_item {
   padding: 60px 45px 40px;
   position: relative;
   border-left: 3px solid rgba(0, 0, 0, .3);
 }
-
 .timeline_item span.item_title {
   display: block;
   font-weight: 300;
   font-size: 24px;
   color: rgb(87, 182, 191);
 }
-
 .timeline_item span.item_title span.description {
   font-size: 20px;
   color: #727272;
-
 }
-
 .timeline_item p {
   font-weight: 400;
   color: #727272;
   font-size: 14px;
   line-height: 24px;
 }
-  
 .timeline_item::before {
   content: attr(date-is);
   position: absolute;
@@ -659,7 +569,6 @@ html,body {
   font-weight: 700;
   font-size: 16px;
 }
-
 .timeline_item::after {
   width: 20px;
   height: 20px;
@@ -672,24 +581,20 @@ html,body {
   border: 3px solid rgba(0,0,0 , .3);
   background: white;
 }
-
 .timeline_item:last-child {
   border-image: linear-gradient(
     to bottom,
     rgba(0,0,0,.3) 60%,
     rgba(0,0,0,0)) 1 100%;
 }
-
 #relevant {
   font-weight: 700;
   font-size: 14px;
 }
-
 .skills_list {
   margin: 0;
   padding: 0;
 }
-
 .skills_list li {
   display: inline-block;
   border: rgb(87, 182, 191) 0.5px solid;
@@ -698,45 +603,35 @@ html,body {
   margin: 3px;
   font-size: 14px;
   color: rgb(87, 182, 191);
-
 }
-/*===== // Vertical Timeline =====*/
 
 @media screen and (max-width: 450px) {
   .timeline_container {
     width: 95%;
     margin: 0 auto;
   }
-
   .timeline_item {
     padding: 40px 0px 30px 25px;
-
   }
-
   .timeline_item span.item_title {
     font-size: 18px;
   }
-
   .timeline_item span.item_title span.description {
     font-size: 16px;
   }
-
   .timeline_item p {
     margin-top: 5px;
     font-size: 14px;
     line-height: unset;
   }
-
   .skills_list li {
     font-size: 14px;
     padding: 2px 5px;
     margin: 1px;
   }
-
   #relevant_title {
     font-size: 14px;
   }
-
   .relevant > li {
     font-size: 14px;
   }
@@ -748,14 +643,12 @@ html,body {
   background: rgb(196, 179, 159);
   padding-top: 30px;
 }
-
 #projects div.content {
   max-width: 1100px;
   width: 100%;
   margin: auto;
   color: #727272;
 }
-
 #projects_headline{
   text-align: center;
   margin: auto;
@@ -765,7 +658,6 @@ html,body {
   outline: 1px dashed #fff;
   outline-offset: -5px;
 }
-
 #projects_headline > p{
   font-size: 40px;
   line-height: 45px;
@@ -774,14 +666,11 @@ html,body {
   font-weight: bold;
   color: white;
 }
-
-
 #projects_content {
   text-align: center;
   margin: 0 auto;
   padding: 0;
 }
-
 .project_card {
   height: 500px;
   width: 320px;
@@ -794,7 +683,6 @@ html,body {
   outline-offset: -5px;
   vertical-align: bottom;
 }
-
 .project_picture {
   display: inline-block;
   width: 290px;
@@ -802,7 +690,6 @@ html,body {
   height: 200px;
   margin: 5px auto;
 }
-
 .project_header {
   font-size: 24px;
   text-align: center;
@@ -811,51 +698,42 @@ html,body {
   letter-spacing: 3px;
   color: rgb(211, 118, 130);
 }
-
 .project_header a {
   color: rgb(211, 118, 130);
 }
-
 .project_desc {
   text-align: left;
   padding: 5px;
   height: 200px;
 }
-
 .project_desc > p > a {
   color: rgb(211, 118, 130);
 }
-
 #cat-and-house > div.project_picture {
   background: url('/assets/HouseCat_mini.jpg');
   background-position: center;
   background-size: cover;
 }
-
 #machine-learning > div.project_picture {
   background: url('/assets/MachineLearning_mini.jpg');
   background-position: center;
   background-size: cover;
 }
-
 #portfolio-web > div.project_picture {
   background: url('/assets/personalWeb_mini.jpg');
   background-position: center;
   background-size: cover;
 }
-
 #painting > div.project_picture {
   background: url('/assets/Drawing_mini.jpg');
   background-position: center;
   background-size: cover;
 }
-
 #bullet-journal > div.project_picture {
   background: url('/assets/bulletJournal.jpg');
   background-position: center;
   background-size: cover;
 }
-
 #ocarina > div.project_picture {
   background: url('/assets/ocarina.jpg');
   background-position: center;
@@ -867,7 +745,6 @@ html,body {
     width: 100%;
     margin: 15px auto;
   }
-  
   .project_picture {
     width: 95%;
   }
@@ -880,7 +757,6 @@ html,body {
   height: 115px;
   width: 100%;
 }
-
 div.left, div.right {
   display: inline-block;
   height: 100%;
@@ -888,22 +764,18 @@ div.left, div.right {
   padding: 0;
   vertical-align: bottom;
 }
-
 div.left {
   float: left;
 }
-
 div.right {
   float: right;
 }
-
 #copy-right {
   height: 100%;
   line-height: 115px;
   margin: 0;
   padding: 0 10px;
 }
-
 #footer-contacts {
   text-align: right;
   height: 100%;
@@ -911,19 +783,16 @@ div.right {
   margin: 0;
   padding: 0;
 }
-
 @media screen and (max-width: 450px) {
   div.left, div.right {
     float: unset;
     height: unset;
   }
-
   #copy-right, #footer-contacts {
     line-height: 25px;
     text-align: left;
     height: 25px;
   }
-
   #copy-right {
     margin-top: 25px;
   }
