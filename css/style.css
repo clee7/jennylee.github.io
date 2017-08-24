@@ -949,13 +949,13 @@ html,body {
 }
 
 #cat-and-house > div.project_picture {
-  background: url('/');
+  background: url('/assets/HouseCat.jpg');
   background-position: center;
   background-size: cover;
 }
 
 #machine-learning > div.project_picture {
-  background: url('/');
+  background: url('/assets/MachineLearning.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -967,7 +967,7 @@ html,body {
 }
 
 #painting > div.project_picture {
-  background: url('/');
+  background: url('/assets/Drawing.png');
   background-position: center;
   background-size: cover;
 }
@@ -1004,7 +1004,6 @@ html,body {
 div.left, div.right {
   display: inline-block;
   height: 100px;
-  width: 50%;
   margin: 0;
   padding: 0px 10px;
   vertical-align: bottom;
