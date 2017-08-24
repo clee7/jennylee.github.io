@@ -1,22 +1,12 @@
-
-
 html,body { 
-  font-size: 90%;
   font-family: 'Nunito', sans-serif;
 }
 
-@media only screen and (max-device-width: 480px) {
-  html {
-   font-size: 100%; 
-  }
-}
-
 .content {
-  padding: 20px;
+  padding: 30px 20px;
 }
 
 /* NavBar */
-
 .navbar-default {
   background-color: rgba(79, 112, 88, 1);
   border: unset;
@@ -145,30 +135,30 @@ html,body {
 
 #intro_text h1 {
   margin: 0px;
-  font-size: 4.5em;
-  letter-spacing: 0.2em;
+  font-size: 62px;
+  letter-spacing: 5px;
   text-transform: uppercase;
 }
 
 #intro_text h2 {
   margin: 0px;
-  font-size: 2em;
+  font-size: 26px;
   font-weight: 400;
-  letter-spacing: 0.1em;
+  letter-spacing: 2px;
 }
 
 .nav_btn{
-  border: 1px solid white;
+  /*border: 1px solid white;*/
   color: white;
   text-transform: uppercase;
-  font-size: 1.2em;
-  letter-spacing: 0.2em;
+  font-size: 16px;
+  letter-spacing: 1px;
   width: auto;
   display: inline-block;
   padding: 7px 18px;
-  margin-right: 1em;
-  margin-top: 1em;
-  border-radius: 8px;
+  margin-right: 7px;
+  margin-top: 7px;
+  border-radius: 10px;
   font-weight: bold;
 }
 
@@ -184,25 +174,26 @@ html,body {
   }
 
   #intro_text h1 {
-    font-size: 2.5em;
+    font-size: 26px;
     font-weight:700;
-    line-height:1em;
+    line-height:26px;
     letter-spacing: 5px;
   }
 
   #intro_text h2 {
-    font-size: 1.3em;
+    font-size: 14px;
   }
 
   .nav_btn {
-    font-size: 1em;
+    font-size: 16px;
+  }
 
+  .intro_nav_btn {
+    display: block;
   }
 }
 
 /* 2. About Me */
-
-
 /* Headline*/
 #about_headline {
   background: rgba(76, 67, 61, 0.8);
@@ -213,13 +204,12 @@ html,body {
 
 #about_headline h2 {
   text-transform: uppercase;
-  font-size: 2em;
-  letter-spacing: 0.1em;
+  font-size: 28px;
 }
 
 #about_headline p {
   font-weight: 400;
-  font-size:1.5em;
+  font-size:20px;
 }
 
 /* Table */
@@ -233,6 +223,13 @@ html,body {
 
 
 /* Book Background */
+#book_wrapper {
+  width: 100%;
+  max-width: 1100px;
+  position: relative;
+  margin: auto;
+}
+
 #book {
   z-index: 1;
   position: static;
@@ -298,19 +295,19 @@ html,body {
 }
 
 .page {
-  line-height: 2.5em;
+  line-height: 32px;
   color: #727272;
 }
 
 .question {
   font-weight:500;
-  font-size:1.2em;
+  font-size:14px;
   text-transform: uppercase;
 }
 
 .answer {
   font-weight: 300;
-  font-size:1.2em;
+  font-size: 14px;
 }
 
 .indent_list {
@@ -318,15 +315,12 @@ html,body {
 }
 
 .grey_nav_btn {
-  font-size:  0.7em;
+  font-size:  12px;
   font-weight: 300;
   color: #727272;
-  border: 1px solid #d8d8d8;
   padding: 0px 7px;
-  margin: 0px;
-  margin-top: 5px;
-  margin-right: 3px;
-  line-height: 2em;
+  margin: 5px 3px;
+  line-height: 24px;
   font-family: 'Raleway', sans-serif;
   
 }
@@ -346,7 +340,7 @@ html,body {
   z-index: 2;
   width: 100%;
   height: 100%;
-  padding: 10% 15%;
+  padding: 7% 12%;
   top: 0%;
   left: 0%;
 }
@@ -355,35 +349,32 @@ html,body {
   padding: 3% 0%;
 }
 
+#left_page {
+  padding: 0% 3%;
+}
+
 #left_page h2 {
-  font-size: 2.5em;
+  font-size: 36px;
   font-weight: bold;
   text-align:center;
 }
 
-@media screen and (max-width: 993px) {
-  #about_headline h2 {
-    font-size:2em;
-    text-transform:none;
-  }
-
-  #about_headline p {
-    font-size:1.3em;
-  }
+@media screen and (max-width: 996px) {
 
   #book {
     display: none;
   }
 
   #page_content {
+    margin:0;
     margin:auto;
-    border: 15px solid #8bc49b;
+    border: 10px solid #8bc49b;
     position: static;
     margin: auto;
     width: 100%;
     background: #fffef7;
     border-radius: 5px;
-    padding: 2%;
+    padding: 0px 3px;
   }
 
   .page {
@@ -401,6 +392,37 @@ html,body {
   }
 }
 
+@media screen and (max-width: 420px) {
+  #about_headline {
+    margin: 0;
+    padding: 2px 10px;
+  }
+
+  #about_headline h2 {
+
+    font-size:20px;
+    text-transform:none;
+  }
+
+  #about_headline p {
+    font-size:16px;
+  }
+
+  .page {
+    line-height: 28px;
+  }
+
+  .question {
+    font-size:14px;
+    text-transform: uppercase;
+  }
+
+  .answer {
+    font-size: 14px;
+  }
+}
+
+
 /* 3. Skills */
 #skills {
   background: #c7e5e8;
@@ -410,7 +432,8 @@ html,body {
 
 #skills_content {
   font-family: 'Raleway', sans-serif;
-  width: 75%;
+  max-width: 900px;
+  width: 90%;
   margin: auto;
   background: #2e4936;
   border: 20px solid #7c4502;
@@ -419,11 +442,12 @@ html,body {
 
 .skills_header {
   color: white;
-  font-size: 3em;
+  font-size: 42px;
+  letter-spacing: 4px;
+  width: 150px;
   border-bottom: #4bd5fc 4px solid;
-  letter-spacing: 0.1em;
-  margin-bottom: 0.5em;
-  text-align: center;
+  padding-bottom: 5px;
+  margin-bottom: 12px;
   text-transform: uppercase;
 }
 
@@ -431,7 +455,7 @@ html,body {
   color: white;
   text-transform: uppercase;
   font-weight: 400;
-  letter-spacing: 0.5em;
+  letter-spacing: 2px;
 }
 
 .languages span {
@@ -440,10 +464,10 @@ html,body {
   border-radius: 50%;
   height: calc(100vw / 11);
   width: calc(100vw / 11);
-  margin: 10px;
+  margin: 5px;
   line-height: calc(100vw / 11);
   text-align: center;
-  font-size: 1.3em;
+  font-size: 16px;
   color: #4bd5fc;
   font-weight: 300;
 
@@ -455,7 +479,7 @@ html,body {
   border-radius: 10px;
   padding: 5px 14px;
   margin: 7px 7px;
-  font-size: 1.2em;
+  font-size: 16px;
   color: #4bd5fc;
   z-index: 2;
 }
@@ -481,65 +505,106 @@ html,body {
   border-radius:5px 5px 0px 0px;
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   #skills_content {
     width: 900px;
   }
 
-  .languages span{
-    height: 100px;
-    width: 100px;
+  .languages span {
+    height: 110px;
+    width: 110px;
     margin: 5px;
-    line-height: 100px;
-    font-size: 1.4em;
+    line-height: 110px;
+    font-size: 18px;
+  }
+
+  .tools li {
+    font-size: 18px;
   }
 
 }
 
-@media screen and (max-width: 1022px) {
-  #skills_content {
-    width: 95%;
-  }
-
+@media screen and (max-width: 996px) {
   .languages span {
-    border: #fff 0.5px solid;
     border-radius: 10px;
     padding: 5px 14px;
-    margin: 7px 7px;
+    margin: 5px;
     height: unset;
     width: unset;
     line-height: unset;
-    font-size: 1.2em;
+    font-size: 14px;
+  }
+
+  .tools li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #skills_content {
+    width: 95%;
+    border: 10px solid #7c4502;
+    padding: 5px;
+
+  }
+
+  .skills_header {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+  }
+
+  .skills_subheader {
+    margin: 7px;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  .languages span {
+    border-color: #727272;
+    padding: 3px 10px;
+    margin: 3px;
+  }
+
+  .tools li {
+    border-color: #727272;
+    padding: 3px 10px;
+    margin: 3px;
   }
 }
 
 /* 4. Resume */
 #resume {
-  background: #e6e6e6;
+  background: rgb(242, 242, 242);
   font-family: 'Raleway', sans-serif;
+  padding-bottom: 30px;
 }
 
 #resume div.content {
-  max-width: 1100px;
+  max-width: 1000px;
   width: 100%;
   margin: auto;
   color: #727272;
 }
 
-#resume h2 {
+.resume_headline {
+  width: 100%;
   text-align: center;
-  font-size: 3em;
-  color: #505050;
-  text-transform: uppercase;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-bottom: 0.5px #e1e1e1 solid;
+
 }
 
-#resume h2 + p {
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 30px;
-  padding-bottom: 10px;
-  border-bottom: 0.5px #999999 solid;
+.resume_headline span {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #727272;
+  margin-left: 20px;
+  letter-spacing: 5px;
 }
+
+
 
 /*===== Vertical Timeline =====*/
 #timeline {
@@ -556,7 +621,7 @@ html,body {
   left: 50%;
   margin-left: -2px;
   z-index: 0;
-  background: #00b0bd;
+  background: #7cacf4;
 }
 #timeline .timeline_start,
 #timeline .timeline_end {
@@ -564,7 +629,12 @@ html,body {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
+<<<<<<< HEAD
   background: #00b0bd;
+=======
+  background: #7cacf4;
+  padding: 15px 23px;
+>>>>>>> acfec9ab3c04446ae84ac2233957956468393853
   color: #fff;
   min-width: 62px;
   width: 5%;
@@ -574,11 +644,6 @@ html,body {
   margin: 0 auto;
   position: relative;
   z-index: 1;
-}
-
-#timeline .timeline_content {
-  padding-top: 67px;
-  padding-bottom: 67px;
 }
 
 .timeline_article {
@@ -609,12 +674,12 @@ html,body {
 .timeline_article span.article_title{
   display: block;
   font-weight: 300;
-  font-size: 1.8em;
-  color: #00b0bd;
+  font-size: 24px;
+  color: #7cacf4;
 }
 
 .timeline_article span.article_title span.description {
-  font-size:0.8em;
+  font-size:18px;
   color: #727272;
 
 }
@@ -622,8 +687,8 @@ html,body {
 
 .timeline_article .timeline_date {
   font-weight: 700;
-  font-size: 1.1em;
-  line-height: 1.5em;
+  font-size: 16px;
+  line-height: 20px;
   color: #727272;
   text-align: right;
 }
@@ -633,15 +698,15 @@ html,body {
   padding: 0;
   font-weight: 400;
   color: #727272;
-  font-size: 1.2em;
-  line-height: 1.5em;
+  font-size: 16px;
+  line-height: 24px;
   position: relative;
 }
 
 
 #relevant {
   font-weight: 700;
-  font-size: 0.9em;
+  font-size: 14px;
 }
 
 .timeline_article .content_left_container {
@@ -675,7 +740,7 @@ html,body {
   margin-left: -31px;
   color: #fff;
   border-radius: 100%;
-  background: #00b0bd;
+  background: #7cacf4;
 }
 
 .timeline_article .meta_date .year,
@@ -695,13 +760,31 @@ html,body {
   font-size: 18px;
   line-height: 10px;
 }
+
+.skills_list {
+  margin:0;
+  padding:0;
+}
+
+.skills_list li {
+  display: inline-block;
+  border: #e6e6e6 0.5px solid;
+  border-radius: 10px;
+  padding: 3px 10px;
+  margin: 3px;
+  font-size: 14px;
+  color: #7cacf4;
+
+}
 /*===== // Vertical Timeline =====*/
 
 /*===== Resonsive Vertical Timeline =====*/
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
 
   #timeline .center_line {
     width: 2px;
+    margin-left: 0;
+    left: 31px;
   }
 
   #timeline .timeline_start,
@@ -712,14 +795,11 @@ html,body {
     max-width: unset;
   }
 
-  #timeline .center_line {
-    margin-left: 0;
-    left: 31px;
-  }
   .timeline_article .meta_date {
     margin-left: 0;
     left: 0px;
   }
+
   .timeline_article .content_left_container,
   .timeline_article .content_right_container {
     max-width: 100%;
@@ -742,49 +822,207 @@ html,body {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
+  #timeline .timeline_content {
+    padding: 5px;
+  }
+
+  #timeline .center_line {
+    display: none;
+  }
+
+  #timeline .timeline_start,
+  #timeline .timeline_end {
+    display: none;
+  }
+
+  .timeline_article .meta_date {
+    display: none;
+  }
+  
   .timeline_article p {
     margin: 0;
+  }
+
+  .timeline_article .content_left_container,
+  .timeline_article .content_right_container {
+    margin: 0px;
+  }
+
+  .timeline_article .content_left,
+  .timeline_article .content_right {
+    padding: 10px 25px;
+    min-height: 65px;
+  }
+
+  .timeline_article .content_left:before {
+    content: unset;
+  }
+
+  .timeline_article .content_right:before {
+    content: unset;
   }
   
 }
 /*===== // Resonsive Vertical Timeline =====*/
 
-/*===== Link to Resume pdf =====*/
-
-.resume_link_wrapper {
-  width: 100%;
-  height: 100px;
-}
-
-#resume .block_btn {
-  position: absolute;
-  width: 100%;
-  height: 100px;
-  background: #00b0bd;
-  color: #e6e6e6;
-}
-
-.block_btn .text {
-  position: absolute;
-  line-height: 100px;
-  text-align: center;
-  width: 100%;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 700;
-  font-size: 2em;
-  text-transform: uppercase;
-}
-
-#resume .block_btn:hover,
-#resume .block_btn:focus {
-  background: #727272;
-}
-
-/*===== // Link to Resume pdf =====*/
 
 /* 5. Projects*/
 #projects {
-  background: rgb(250, 181, 181);
+  background: rgb(196, 179, 159);
+  padding-top: 30px;
 }
 
+#projects div.content {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+  color: #727272;
+}
+
+#projects_headline{
+  text-align: center;
+  margin: auto;
+  background: rgb(211, 118, 130);
+  padding: 15px 10px;
+  box-shadow: 10px 7px rgba(0, 0, 0, 0.1);
+  outline: 1px dashed #fff;
+  outline-offset: -5px;
+}
+
+#projects_headline > p{
+  font-size: 40px;
+  line-height: 45px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: white;
+}
+
+
+#projects_content {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.project_card {
+  height: 500px;
+  width: 320px;
+  display: inline-block;
+  background: rgb(254, 255, 242);
+  margin: 20px 15px;
+  padding: 15px;
+  box-shadow: 10px 7px rgba(0, 0, 0, 0.1);
+  outline: 1px dashed rgb(196, 179, 159);
+  outline-offset: -5px;
+  vertical-align: bottom;
+}
+
+.project_picture {
+  display: inline-block;
+  width: 290px;
+  background: white;
+  height: 200px;
+  margin: 5px auto;
+  outline: 1px dashed white;
+  outline-offset: -5px;
+}
+
+.project_header {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom:2px; 
+  letter-spacing: 3px;
+  color: rgb(211, 118, 130);
+}
+
+.project_header a {
+  color: rgb(211, 118, 130);
+}
+
+.project_desc {
+  text-align: left;
+  padding: 5px;
+  height: 200px;
+}
+
+#cat-and-house > div.project_picture {
+  background: url('/');
+  background-position: center;
+  background-size: cover;
+}
+
+#machine-learning > div.project_picture {
+  background: url('/');
+  background-position: center;
+  background-size: cover;
+}
+
+#portfolio-web > div.project_picture {
+  background: url('/assets/personalWeb.png');
+  background-position: center;
+  background-size: cover;
+}
+
+#painting > div.project_picture {
+  background: url('/');
+  background-position: center;
+  background-size: cover;
+}
+
+#bullet-journal > div.project_picture {
+  background: url('/');
+  background-position: center;
+  background-size: cover;
+}
+
+#ocarina > div.project_picture {
+  background: url('/');
+  background-position: center;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 420px) {
+  .project_card {
+    width: 100%;
+    margin: 15px auto;
+  }
+  
+  .project_picture {
+    width: 95%;
+  }
+}
+
+/* Footer */
+#footer {
+  color: #727272;
+  background: rgb(234, 234, 234);
+}
+
+div.left, div.right {
+  display: inline-block;
+  height: 100px;
+  width: 50%;
+  margin: 0;
+  padding: 0px 10px;
+  vertical-align: bottom;
+}
+
+div.left {
+  float: left;
+}
+
+div.right {
+  float: right;
+}
+
+#copy-right {
+  line-height: 100px;
+}
+
+#footer-contacts {
+  line-height: 100px;
+  text-align: right;
+}

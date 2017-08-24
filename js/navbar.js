@@ -28,18 +28,14 @@
     if( $(e.target).is('a') ) {
         $(this).collapse('hide');
     }
+    });
 
     // .navbar-collapse (menu) close on click outside
-    $(document).click(function (event) {
-    var clickover = $(event.target);
-    var $navbar = $(".navbar-collapse");               
-    var _opened = $navbar.hasClass("in");
-    if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
-        $navbar.collapse('hide');
-    }
-});
+	$(document).click(function(e) {
+    	if (!$(e.target).is('a')) {
+        	$('.navbar-collapse').collapse('hide');        
+    	}
+	});
 });
 
-
-});
 }(jQuery));
