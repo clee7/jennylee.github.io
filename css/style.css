@@ -575,15 +575,20 @@ html,body {
 
 /* 4. Resume */
 #resume {
-  background: rgb(250, 250, 250);
+  background: rgb(93, 136, 147);
   font-family: 'Raleway', sans-serif;
+  position: relative;
+  padding: 35px 0px;
 }
 
 #resume div.content {
-  max-width: 1100px;
+  max-width: 950px;
   width: 100%;
-  margin: auto;
+  margin: 0px auto;
+  padding: 30px;
   color: #727272;
+  background: rgb(250, 250, 250);
+  box-shadow: 10px 10px 0px rgba(0,0,0,0.1);
 }
 
 .resume_headline {
