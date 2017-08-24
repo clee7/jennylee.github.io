@@ -575,13 +575,12 @@ html,body {
 
 /* 4. Resume */
 #resume {
-  background: rgb(242, 242, 242);
+  background: rgb(250, 250, 250);
   font-family: 'Raleway', sans-serif;
-  padding-bottom: 30px;
 }
 
 #resume div.content {
-  max-width: 1000px;
+  max-width: 1100px;
   width: 100%;
   margin: auto;
   color: #727272;
@@ -607,261 +606,129 @@ html,body {
 
 
 /*===== Vertical Timeline =====*/
-#timeline {
-  position: relative;
-  width: 100%;
+.timeline_container {
+  width: 85%;
   margin: 0 auto;
 }
 
-#timeline .center_line {
-  position: absolute;
-  width: 3px;
-  height: 100%;
-  top: 0;
-  left: 50%;
-  margin-left: -2px;
-  z-index: 0;
-  background: #7cacf4;
-}
-#timeline .timeline_start,
-#timeline .timeline_end {
-  display: table;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  background: #00b0bd;
-  background: #7cacf4;
-  padding: 15px 23px;
-  color: #fff;
-  min-width: 62px;
-  width: 5%;
-  height: 32px;
-  line-height: 32px;
-  text-align: center;
-  margin: 0 auto;
+.timeline_item {
+  padding: 60px 45px 40px;
   position: relative;
-  z-index: 1;
+  border-left: 3px solid rgba(0, 0, 0, .3);
 }
 
-.timeline_article {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-  margin: 20px 0;
-}
-
-.timeline_article .content_left_container,
-.timeline_article .content_right_container {
-  max-width: 44%;
-  width: 100%;
-}
-
-.timeline_article .content_left,
-.timeline_article .content_right {
-  position: relative;
-  width: auto;
-  border: 1px solid #ddd;
-  background-color: rgba(255,255,255,.9);
-  box-shadow: 0 1px 3px rgba(0,0,0,.03);
-  padding: 20px 25px;
-  border-radius: 15px;
-}
-
-.timeline_article span.article_title{
+.timeline_item span.item_title {
   display: block;
   font-weight: 300;
   font-size: 24px;
-  color: #7cacf4;
+  color: rgb(87, 182, 191);
 }
 
-.timeline_article span.article_title span.description {
-  font-size:18px;
+.timeline_item span.item_title span.description {
+  font-size: 20px;
   color: #727272;
 
 }
 
-
-.timeline_article .timeline_date {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #727272;
-  text-align: right;
-}
-
-.timeline_article p {
-  margin: 0;
-  padding: 0;
+.timeline_item p {
   font-weight: 400;
   color: #727272;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
-  position: relative;
+}
+  
+.timeline_item::before {
+  content: attr(date-is);
+  position: absolute;
+  left: 25px;
+  font-weight: bold;
+  top: 14px;
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
 }
 
+.timeline_item::after {
+  width: 20px;
+  height: 20px;
+  display: block;
+  top: 16px;
+  position: absolute;
+  left: -11px;
+  border-radius: 10px;
+  content: '';
+  border: 3px solid rgba(0,0,0 , .3);
+  background: white;
+}
+
+.timeline_item:last-child {
+  border-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,.3) 60%,
+    rgba(0,0,0,0)) 1 100%;
+}
 
 #relevant {
   font-weight: 700;
   font-size: 14px;
 }
 
-.timeline_article .content_left_container {
-  float: left;
-}
-.timeline_article .content_right_container {
-  float: right;
-}
-.timeline_article .content_left:before,
-.timeline_article .content_right:before{
-  position: absolute;
-  top: 20px;
-  font-size: 23px;
-  font-family: "FontAwesome";
-  color: rgba(255,255,255,.9);
-}
-.timeline_article .content_left:before {
-  content: "\f0da";
-  right: -8px;
-}
-.timeline_article .content_right:before {
-  content: "\f0d9";
-  left: -8px;
-}
-.timeline_article .meta_date {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 62px;
-  height: 62px;
-  margin-left: -31px;
-  color: #fff;
-  border-radius: 100%;
-  background: #7cacf4;
-}
-
-.timeline_article .meta_date .year,
-.timeline_article .meta_date .month {
-  display: block;
-  text-align: center;
-  font-weight: 900;
-}
-
-.timeline_article .meta_date .year {
-  font-size: 30px;
-  line-height: 10px;
-}
-
-.timeline_article .meta_date .month {
-  padding: 12px;
-  font-size: 18px;
-  line-height: 10px;
-}
-
 .skills_list {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 .skills_list li {
   display: inline-block;
-  border: #e6e6e6 0.5px solid;
+  border: rgb(87, 182, 191) 0.5px solid;
   border-radius: 10px;
   padding: 3px 10px;
   margin: 3px;
   font-size: 14px;
-  color: #7cacf4;
+  color: rgb(87, 182, 191);
 
 }
 /*===== // Vertical Timeline =====*/
 
-/*===== Resonsive Vertical Timeline =====*/
-@media only screen and (max-width: 1200px) {
-
-  #timeline .center_line {
-    width: 2px;
-    margin-left: 0;
-    left: 31px;
+@media screen and (max-width: 450px) {
+  .timeline_container {
+    width: 95%;
+    margin: 0 auto;
   }
 
-  #timeline .timeline_start,
-  #timeline .timeline_end {
-    margin: 0;
-    padding: 5px;
-    width: 62px;
-    max-width: unset;
+  .timeline_item {
+    padding: 40px 0px 30px 25px;
+
   }
 
-  .timeline_article .meta_date {
-    margin-left: 0;
-    left: 0px;
+  .timeline_item span.item_title {
+    font-size: 18px;
   }
 
-  .timeline_article .content_left_container,
-  .timeline_article .content_right_container {
-    max-width: 100%;
-    width: auto;
-    float: none;
-    margin-left: 75px;
-    min-height: 53px;
+  .timeline_item span.item_title span.description {
+    font-size: 16px;
   }
-  .timeline_article .content_left_container {
-    margin-bottom: 20px;
+
+  .timeline_item p {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: unset;
   }
-  .timeline_article .content_left,
-  .timeline_article .content_right {
-    padding: 10px 25px;
-    min-height: 65px;
+
+  .skills_list li {
+    font-size: 14px;
+    padding: 2px 5px;
+    margin: 1px;
   }
-  .timeline_article .content_left:before {
-    content: "\f0d9";
-    left: -8px;
+
+  #relevant_title {
+    font-size: 14px;
+  }
+
+  .relevant > li {
+    font-size: 14px;
   }
 }
-
-@media only screen and (max-width: 420px) {
-  #timeline .timeline_content {
-    padding: 5px;
-  }
-
-  #timeline .center_line {
-    display: none;
-  }
-
-  #timeline .timeline_start,
-  #timeline .timeline_end {
-    display: none;
-  }
-
-  .timeline_article .meta_date {
-    display: none;
-  }
-  
-  .timeline_article p {
-    margin: 0;
-  }
-
-  .timeline_article .content_left_container,
-  .timeline_article .content_right_container {
-    margin: 0px;
-  }
-
-  .timeline_article .content_left,
-  .timeline_article .content_right {
-    padding: 10px 25px;
-    min-height: 65px;
-  }
-
-  .timeline_article .content_left:before {
-    content: unset;
-  }
-
-  .timeline_article .content_right:before {
-    content: unset;
-  }
-  
-}
-/*===== // Resonsive Vertical Timeline =====*/
 
 
 /* 5. Projects*/
