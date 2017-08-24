@@ -582,10 +582,25 @@ html,body {
   background: white;
 }
 .timeline_item:last-child {
+  border-width: 3px 0 3px 3px;
+  border-style: solid;
+  -webkit-border-image: 
+    -webkit-linear-gradient(to bottom,
+    rgba(0,0,0,.3) 60%,
+    rgba(0,0,0,0)) 1 100%;
+  -moz-border-image:
+    -moz-linear-gradient(to bottom,
+    rgba(0,0,0,.3) 60%,
+    rgba(0,0,0,0)) 1 100%;  
+  -o-border-image:
+    -o-linear-gradient(to bottom,
+    rgba(0,0,0,.3) 60%,
+    rgba(0,0,0,0)) 1 100%;
   border-image: linear-gradient(
     to bottom,
     rgba(0,0,0,.3) 60%,
     rgba(0,0,0,0)) 1 100%;
+  
 }
 #relevant {
   font-weight: 700;
