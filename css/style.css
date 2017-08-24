@@ -835,13 +835,13 @@ html,body {
 }
 
 #portfolio-web > div.project_picture {
-  background: url('/assets/personalWeb_mini.png');
+  background: url('/assets/personalWeb_mini.jpg');
   background-position: center;
   background-size: cover;
 }
 
 #painting > div.project_picture {
-  background: url('/assets/Drawing_mini.png');
+  background: url('/assets/Drawing_mini.jpg');
   background-position: center;
   background-size: cover;
 }
