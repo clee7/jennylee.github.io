@@ -107,7 +107,7 @@ html,body {
   min-height:100vh;
   z-index: -100;
   background-color: #dd617c;
-  background: url('/assets/intro_background.jpg');
+  background: url('/assets/intro_background_mini.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -823,25 +823,25 @@ html,body {
 }
 
 #cat-and-house > div.project_picture {
-  background: url('/assets/HouseCat.jpg');
+  background: url('/assets/HouseCat_mini.jpg');
   background-position: center;
   background-size: cover;
 }
 
 #machine-learning > div.project_picture {
-  background: url('/assets/MachineLearning.jpg');
+  background: url('/assets/MachineLearning_mini.jpg');
   background-position: center;
   background-size: cover;
 }
 
 #portfolio-web > div.project_picture {
-  background: url('/assets/personalWeb.png');
+  background: url('/assets/personalWeb_mini.png');
   background-position: center;
   background-size: cover;
 }
 
 #painting > div.project_picture {
-  background: url('/assets/Drawing.png');
+  background: url('/assets/Drawing_mini.png');
   background-position: center;
   background-size: cover;
 }
@@ -853,7 +853,7 @@ html,body {
 }
 
 #ocarina > div.project_picture {
-  background: url('/assets/ocarina.jpg');
+  background: url('/assets/ocarina_mini.jpg');
   background-position: center;
   background-size: cover;
 }
