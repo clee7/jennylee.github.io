@@ -1,5 +1,12 @@
-html,body { 
+html { 
   font-family: 'Nunito', sans-serif;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
 }
 
 .content {
@@ -12,6 +19,7 @@ html,body {
   --navbar-font-color: rgb(255, 255, 255);
   --navbar-on-hover: rgb(200, 200, 200);
   --navbar-hamb-hover: rgba(250,250,250,0.4);
+  display: none;
 }
 
 .navbar-default {
@@ -39,7 +47,7 @@ html,body {
   color: var(--navbar-on-hover);
 }
 .navbar-default .navbar-toggle {
-	border: unset;
+  border: unset;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
@@ -51,7 +59,10 @@ html,body {
 }
 
 
-@media (max-width: 2048px) {
+@media (max-width: 480px) {
+  .navbar {
+    display: unset;
+  }
   .navbar-header {
       float: none;
   }
@@ -87,6 +98,7 @@ html,body {
       display:block !important;
   }
 }
+
 
 /* 1. Intro */
 .background {

@@ -1,0 +1,87 @@
+    
+HTML:
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="#home" class="dot name-active"><span>Home</span></a></li>
+          <li><a href="#about" class="dot"><span>About</span></a></li>
+          <li><a href="#skills" class="dot"><span>Skills</span></a></li>
+          <li><a href="#resume" class="dot"><span>Resume</span></a></li>
+          <li><a href="#projects" class="dot"><span>Projects</span></a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- // Sidebar -->
+
+CSS:
+/* SIDEBAR NAVIGATION */
+.sidebar {
+  position:absolute; 
+  right:0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.dot {
+  display:inline-block; 
+  width:13px; 
+  height:13px; 
+  background-color:rgba(0,0,0,.4); 
+  border-radius:13px; 
+  z-index:999; 
+  content:''; 
+  color:transparent; 
+  font-size:16px; 
+  line-height:16px; 
+  vertical-align:middle; 
+  margin:10px 0 10px 0; 
+}
+
+.dot:hover {
+  background-color:rgba(0,0,0,.6); 
+  color:rgba(0,0,0,.4);
+  text-decoration: none;
+}
+
+.dot span {
+  margin:0px 0px 20px 15px; 
+  position:relative; 
+  top:0px; 
+  left:-90px;
+}
+
+nav {
+  width:100px; 
+  height:200px;
+  padding:0 0px; 
+  position:fixed; 
+  top:50%; 
+  right:20px; 
+  transform: 
+  translate(0, -50%); 
+  z-index: 10000; 
+  text-align:right;
+}
+
+nav ul li a {
+  text-decoration:none;
+}
+
+nav ul {
+  list-style-type:none; 
+  margin:0; 
+  padding:0;
+}
+
+.name-active {
+  color:rgba(0,0,0,.4); 
+  background-color:#FFD95F; 
+  text-align:right;
+}
+
+@media only screen and (max-width: 480px) {
+  .sidebar nav {
+    display: none;
+  }
+
+}
