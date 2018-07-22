@@ -5,13 +5,13 @@
     <meta name="description" content="Portfolio site of Chih-Chieh Lee.">
     <meta name="author" content="Chih-Chieh Lee">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
     <!-- Bootstrap Javascript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
+
     <!-- Bootstrap stylesheet-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -82,7 +82,7 @@
       <!-- Headline -->
     	<div id="about_headline">
     		<h2>Hello world! I am Chih-Chieh (Jenny) Lee!</h2>
-    		<p>I am a design-oriented software engineer with passion in machine learning and A.I..</p>
+    		<p>I am a software engineer with passion in machine learning and A.I..</p>
     	</div>
       <!-- // Headline -->
       <!-- Table -->
@@ -213,12 +213,12 @@
             <div class="languages">
               <span>C</span>
               <span>C++</span>
+              <span>C#</span>
               <span>Python</span>
               <span>OCaml</span>
+              <span>Haskell</span>
               <span>JavaScript</span>
-              <span>CSS</span>
-              <span>HTML</span>
-              <span>Java</span>
+              <span>HTML/CSS</span>
               <span>SQL</span>
             </div>
           </div>
@@ -227,16 +227,10 @@
           <div class="col col-md-6">
             <h3 class="skills_subheader">Tools</h3>
             <ul class="no_bullet tools">
-              <li>Tensorflow + Keras</li>
-              <li>Android Studio</li>
-              <li>XCode</li>
               <li>Git + Github</li>
-              <li>Command Line</li>
-              <li>Chrome DevTools</li>
-              <li>SQL Developer</li>
-              <li>Agile + Scrum</li>
+              <li>Tensorflow + Keras</li>
               <li>MatLab</li>
-              <li>Adobe Suite</li>
+              <li>Mathematica</li>
             </ul>
           </div>
           <!-- // Tools -->
@@ -286,31 +280,35 @@
             </p>
           </div>
           <!-- // Timeline Item -->
-            
+
           <!-- Timeline Item -->
           <div class="timeline_item" date-is="Sep 2015 - Present">
             <span class="item_title">California Institute of Technology</span>
             <p>B.S. in Computer Science | GPA: 3.9 / 4.0
               <p id="relevant_title">Relevant Coursework:</p>
               <ul class="relevant">
+                <li>Functional Programming</li>
+                <li>GPU Programming</li>
                 <li>Machine Learning Data Mining</li>
                 <li>Networks: Structure Economics</li>
-                <li>Intro to Algorithms</li> 
-                <li>Intro to Computing Systems</li> 
+                <li>Intro to Algorithms</li>
+                <li>Intro to Computing Systems</li>
                 <li>Intro to Programming Methods</li>
-                <li>Fundamentals of Computer Programming</li> 
+                <li>Fundamentals of Computer Programming</li>
                 <li>Learning Systems</li>
-                <li>Intro to Discrete Mathematics</li> 
+                <li>Intro to Discrete Mathematics</li>
                 <li>Decidability and Tractability</li>
                 <li>Intro to Computer Programming</li>
-                <li>Computer Language Labs (C, C++, JavaScript)</li> 
+                <li>Computer Language Labs (C, C++, JavaScript)</li>
               </ul>
             </p>
             <ul class="skills_list">
               <li>C</li>
               <li>C++</li>
+              <li>Cuda</li>
               <li>JavaScript</li>
               <li>OCaml</li>
+              <li>Haskell</li>
               <li>Python</li>
               <li>MatLab</li>
             </ul>
@@ -325,7 +323,7 @@
             </p>
           </div>
           <!-- // Timeline Item -->
-          
+
           <!-- Timeline Item -->
           <div class="timeline_item" date-is="Jun - Sep 2016 ">
             <span class="item_title">Hsieh Research Lab <span class="description">| Summer Researcher</span></span>
@@ -374,7 +372,7 @@
             </p>
           </div>
           <!-- // Timeline Item -->
-          
+
           <!-- Timeline Item -->
           <div class="timeline_item" date-is="Jun - Aug 2017">
             <span class="item_title">Zenith Insurance <span class="description">| IT Intern</span></span>
@@ -394,7 +392,7 @@
             </ul>
           </div>
           <!-- // Timeline Item -->
-            
+
           <!-- Timeline Item -->
           <div class="timeline_item" date-is="Sep 2017 - Dec 2017">
             <span class="item_title">University of Edinburgh <span class="description">| Study Abroad / Exchange</span></span>
@@ -402,18 +400,35 @@
               <p id="relevant_title">Relevant Coursework:</p>
               <ul class="relevant">
                 <li>Intro to Vision and Robotics</li>
-                <li>Database Systems</li> 
-                <li>Computer Security</li> 
+                <li>Database Systems</li>
+                <li>Computer Security</li>
               </ul>
             </p>
           </div>
           <!-- // Timeline Item -->
 
           <!-- Timeline Item -->
-          <div class="timeline_item" date-is="Jun 2018 - Sep 2018">
-            <span class="item_title">Microsoft <span class="description">| Software Engineering Intern</span></span>
-            <p> For the upcoming summer, I will be interning at Microsot as software engineer.
+          <div class="timeline_item" date-is="Sep 2017 - Dec 2017">
+            <span class="item_title">CS 156B Learning Systems: Netflix Competition <span class="description">| Class Winner</span></span>
+            <p>Implemented neural autoregressive approach to collaborative filtering (CF-NADE) to model and predict user rating vector on set of movies. Improved rating prediction accuracy to 4.6% above the original Netflix model with CF-NADE model. Blended CF-NADE with TimeSVD++, RBM, Tensor Factorization, and other machine learning models reaching 8.86% test improvement from original Netflix model.
             </p>
+            <ul class="skills_list">
+              <li>Python</li>
+              <li>C++</li>
+              <li>Git + GitHub</li>
+            </ul>
+          </div>
+          <!-- // Timeline Item -->
+
+          <!-- Timeline Item -->
+          <div class="timeline_item" date-is="Jun 2018 - Present">
+            <span class="item_title">Microsoft <span class="description">| Software Engineering Intern</span></span>
+            <p> Designed and implemented code generation from an AI graph model to Brainwave compiler intermediate representation. Captured the control flow of the AI graph and FPGA-supported vector and matrix operations for the AI graph. Facilitated fast prototyping of graph models to be used in Brainwave runtime making the FPGA accessible to all AI developers and data scientists.</p>
+            <ul class="skills_list">
+              <li>C#</li>
+              <li>Tensorflow</li>
+              <li>Git + GitHub</li>
+            </ul>
           </div>
           <!-- // Timeline Item -->
 
@@ -433,7 +448,7 @@
 	        <div class="project_card"  id="cat-and-house">
             <div class="project_picture"></div>
 		        <div class="project_header">Cat and House</div>
-		        <div class="project_desc"><p> <a target="_blank" class="link" href="https://devpost.com/software/cat-and-house">Cat and House</a> is an Android mobile game inspired by the unique experience of living in an apartment with friends. From squashing cockroaches to fighting for the laundry machine, Cat and House uses a multitude of mini games to simulate the apartment-living experience. This game is built in Unity with C#. Most of graphics are designed and created by the team with Adobe Photoshop. 
+		        <div class="project_desc"><p> <a target="_blank" class="link" href="https://devpost.com/software/cat-and-house">Cat and House</a> is an Android mobile game inspired by the unique experience of living in an apartment with friends. From squashing cockroaches to fighting for the laundry machine, Cat and House uses a multitude of mini games to simulate the apartment-living experience. This game is built in Unity with C#. Most of graphics are designed and created by the team with Adobe Photoshop.
 				    </p></div>
 			     </div>
 	        <!-- // Project -->
@@ -442,8 +457,7 @@
           <div class="project_card" id="machine-learning">
             <div class="project_picture"></div>
             <div class="project_header">Machine Learning</div>
-            <div class="project_desc"><p>Machine learning is an area of study in Computer Science that captured my interest and passion. In CS 156a: Learning Systems, I have learned the basic algorithms including <a target="_blank" href="https://github.com/clee7/Perceptron_Algorithm_and_Support_Vector_Machine">Perceptron Algorithm</a>, <a target="_blank" href="https://github.com/clee7/Perceptron_Algorithm_and_Support_Vector_Machine">Support Vector Machine</a>, and <a target="_blank" href="https://github.com/clee7/Linear_Regression">Linear Regression</a>. The applications of Machine Learning in multitude of areas and industries intrigued me. I plan to continue my study in the the machine learning track at Caltech. 
-            </p></div>
+            <div class="project_desc"><p>Machine learning is an area of study in Computer Science that captured my interest and passion. In CS 156a: Learning Systems, I have learned the basic algorithms including <a target="_blank" href="https://github.com/clee7/Perceptron_Algorithm_and_Support_Vector_Machine">Perceptron Algorithm</a>, <a target="_blank" href="https://github.com/clee7/Perceptron_Algorithm_and_Support_Vector_Machine">Support Vector Machine</a>, and <a target="_blank" href="https://github.com/clee7/Linear_Regression">Linear Regression</a>.</p></div>
            </div>
           <!-- // Project -->
 
@@ -460,7 +474,7 @@
           <div class="project_card" id="painting">
             <div class="project_picture"></div>
             <div class="project_header">Painting</div>
-            <div class="project_desc">In my free time, I like to paint with traditional media as well as digital media. Acrylic paint and watercolor are my absolute favorites. However, Photoshop and other graphic design tools are also frequently used. I paint all kind of things including landscape, Ghibli characters, and my cats.<p>  
+            <div class="project_desc">In my free time, I like to paint with traditional media as well as digital media. Acrylic paint and watercolor are my absolute favorites. However, Photoshop and other graphic design tools are also frequently used. I paint all kind of things including landscape, Ghibli characters, and my cats.<p>
             </p></div>
            </div>
           <!-- // Project -->
